@@ -1,0 +1,25 @@
+div.htext{
+    /* position: absolute; */
+    /* min-height:70px; */
+    height:50%;
+    /* background-color: aqua; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.5vw;
+}
+div#text-02{
+  margin-top: -1%;
+}
+
+@media screen and (max-width:500px) {
+    div.htext{
+      width:100%;
+      font-size: 6.5vw;
+      /* background-color: blueviolet;  */
+    }
+    div#text-02{
+      margin-top: -4%;
+    }
+  }
+  @media screen and (min-width:501px) and (max-width:800px){
+    
+ }

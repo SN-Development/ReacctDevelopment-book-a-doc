@@ -1,0 +1,207 @@
+div.signup-form{
+    height: 85%;
+    width:60%;
+    /* background-color: aqua; */
+    border-radius:1em;
+    box-shadow:0  0.188em 1.550em rgb(64, 64, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: auto;
+}
+p.signup-text{
+    font-family: 'Kanit', sans-serif;
+    font-size: 2vw;
+    font-weight: 700;
+    color: blue;
+}
+
+div.user-input{
+    position: relative;
+    width: 80%;
+    height: 15%;
+    margin-bottom:7%;
+    /* color:blue; */
+    /* background-color: aquamarine;  */
+}
+
+
+div.user-input label{
+    width:100%;
+    height: 30%;
+    /* color:rgb(56, 56, 223); */
+    color:rgb(67, 67, 248);
+}
+input.input{
+    width:100%;
+    height: 40%;
+    margin-top: 2%;
+    padding: 2%;
+    border:none;
+    border-bottom: 1px solid rgb(52, 133, 245);
+    color:rgb(29, 26, 34);
+    font-size: 1vw;
+    color: rgb(0, 145, 255);
+    /* background-color: rgba(194, 205, 217, 0.66); */
+}
+
+input:focus{
+    outline: none;
+    /* border: 1px solid rgb(52, 133, 245); */
+    /* background-color: rgb(236, 240, 244); */
+}
+form.login-btn{
+    width:60%;
+    height: 10%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button.btn{
+    width:100%;
+    height:100%;
+    background-color:rgba(18, 83, 215, 0.735);
+    border:none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 700;
+    color:rgb(29, 30, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    transition: 0.75s;
+    border-radius:0.2em;
+}
+.btn:hover{
+    transform: scale(1.18);
+    color:white;
+    background-color: rgba(9, 86, 239, 0.94);
+}
+div.already-account{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+p.create-account{
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    color:blue;
+    font-size: 1.1vw;
+    margin-left: 5%;
+    cursor: pointer;
+}
+.already-account p.text{
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.9vw;
+}
+.hide{
+    position: absolute;
+    transform: scale(0);
+}
+.invalid-popup{
+    margin-top: 1%;
+    width:100%;
+    padding: 2%;
+    background-color: rgba(228, 144, 144, 0.681);
+    color:rgb(176, 22, 22);
+    font-family: 'Kanit', sans-serif;
+    font-size: 1vw;
+    transition: 0.5s;
+    transform: scale(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.user-instruction{
+    visibility:hidden;
+    width:50%;
+    margin-top:1%;
+    margin-left: 0%;
+    color:rgb(69, 65, 65);
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.9vw;
+    background-color: rgb(160, 211, 248);
+    border-radius:0.5em;
+    border:2px solid rgb(51, 13, 223);
+    display: flex;
+    align-items: center;
+}
+#email-insturction{
+    position: absolute;
+    top:36%;
+    height:5%;
+}
+#password-insturction{
+    position: absolute;
+    top:52%;
+    height:8%;
+    padding: 2%;
+}
+#confirm-password-insturction{
+    position: absolute;
+    top:69%;
+    height:5%;
+}
+.invalid-user-hide{
+    position: absolute;
+    transform:scale(0);
+}
+.invalid-user-popup{
+    position: absolute;
+    top:13%;
+    height:80%;
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius:1em;
+    background-color: rgba(194, 105, 105, 0.539);
+    color:rgb(243, 32, 12);
+    transform:scale(1);
+    transition: 1s;
+    
+}
+@media screen and (max-width:500px){
+    div.signup-form{
+        height: 100%;
+        width:100%;
+    }
+    p.signup-text{
+        font-size: 7vw;
+    }
+    
+    div.user-input label{
+        font-size: 5vw;
+    }
+    input.input{
+        font-size: 4vw;
+    }
+    form.login-btn{
+        margin-top: 0%;
+    }
+    button.btn{
+        width:90%;
+        height: 80%;
+        font-size: 4vw;
+    }
+    .btn:hover{
+        transform: none;
+        color:rgb(29, 30, 31);
+    }
+    p.create-account{
+        font-size: 3.5vw;
+    }
+    .already-account p.text{
+        font-size: 3vw;
+    }
+    .invalid-user-popup{
+        width:100%;
+        height:88%;
+    }
+}

@@ -1,0 +1,45 @@
+div.slider-btn{
+    position: relative;
+    top:40%;
+    left:7vw;
+    width:28%;
+    height:10%;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+
+}
+
+div.new-slider-btn{
+    position: fixed;
+    top:-23vh;
+    left:7vw;
+}
+/* div.login-error-alert-to-appontment{
+    position: absolute;
+    top:-30%;
+    left: 0%;
+} */
+
+@media screen and (max-width:500px) {
+    div.slider-btn{
+        top:33%;
+        margin-top:0%;
+        height:5vh;
+        width:50vw;
+    }
+  }
+  @media screen and (min-width:501px) and (max-width:800px){
+    div.slider-btn{
+        top:42%;
+        width:40%;
+        /* background-color: aqua; */
+    }
+  }
+  @media screen and (min-width:801px) and (max-width:1100px){
+    div.slider-btn{
+        top:43%;
+        width:38%;
+    }
+  }

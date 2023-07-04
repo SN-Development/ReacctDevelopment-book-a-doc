@@ -1,0 +1,142 @@
+div.nav-bar{
+    min-height:50px;
+    height: 10vh;
+    width:100vw;
+    background-color: #f6f6f6; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div.logo{
+    height: 100%;
+    min-width:150px;
+    width:20%;
+    max-width: 350px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.menu-bar{
+    position: absolute;
+    width:8vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    display: none;
+    cursor: pointer;
+}
+img.logo-img{
+    margin:auto;
+    min-width:125px;
+    width: 60%;
+}
+div.nav-componenets{
+    height: 100%;
+    width:65%;
+    max-width: 100%;
+    /* background-color: rgb(37, 229, 226); */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+ul.nav-ul{
+    min-width:500px;
+    width:70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: left;
+    /* background-color: blue; */
+}    
+li.nav-list{
+    padding: 0% 4%;
+}
+a.nav-link{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+    font-weight: 1000;
+    text-transform: uppercase;
+}
+#nav-link-active{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+    font-weight: 1000;
+    text-transform: uppercase;
+    color:blue;
+}
+a.nav-link:hover{
+    cursor: pointer;
+    border-bottom:3px solid blueviolet;
+    color:rgba(0, 0, 255, 0.757);
+}
+div.dpt{
+    
+    transition: 2s;
+    transform:scale(0)
+}
+#department-link:hover .dpt{
+    transform: scale(1);
+}
+.user{
+    position: relative;
+    top:0vh;
+    /* left:8%; */
+    margin: 0;
+    margin-left: 5vw;
+    padding: 1vh 1vw;
+    font-size: 1.3vw;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+    font-weight: 1000;
+    text-transform: uppercase;
+    color: white;
+    background-color: blue;
+    border-radius: 50%;
+    cursor:pointer;
+}
+.user:hover .sign-out{
+    transform: scale(1);
+}
+.sign-out{
+    position: absolute;
+    top:8vh;
+    right:0vw;
+    width:15vw;
+    height: 25vh;
+    background-color:rgb(246, 246, 246);
+    transition: 1.5s;
+    transform: scale(0);
+}
+@media screen and (max-width:500px){
+    div.nav-bar{
+      min-height: 6.5vh;
+      height: 7vh;
+    }
+    div.logo{
+        display: none;
+    }
+    div.menu-bar{
+        display: flex;
+    }
+    div.nav-componenets{
+        display: none;
+    }
+}
+@media screen and (min-width:501px) and (max-width:800px) {
+    a.nav-link{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (min-width:801px) and (max-width:1100px) {
+
+    a.nav-link{
+        font-size: 0.9rem;
+    }
+}

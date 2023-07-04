@@ -1,0 +1,306 @@
+div.contact-us{
+    position: relative;
+    top:250vh;
+    height: 140vh;
+    width:70vw;
+    margin:auto;
+    /* margin-left: 15vw; */
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+}
+div.new-contact-us{
+    position: relative;
+    top:70vh;
+    height: 140vh;
+    width:70vw;
+    margin:auto;
+    /* margin-left: 15vw; */
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+    animation: 2s anim-lineUp-Contact ease-out 1;
+}
+@keyframes anim-lineUp-Contact {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+div.heading-for-contact-us{
+    width:40%;
+    height: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+p.contact-us-heading01{
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25vw;
+    color:rgba(28, 28, 28, 1);
+    word-spacing: 0.5vw;
+    letter-spacing: 0.2vw;
+}
+p.contact-us-heading02{
+    margin-top: 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.25vw;
+    color: rgba(28, 28, 28, 1);
+}
+div.contact-ways{
+    width:80%;
+    height: 30%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div.contact-type-way{
+    /* position: relative; */
+    height: 50%;
+    width:16%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: blue; */
+}
+p.contact-title{
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25vw;
+    color: rgba(28, 28, 28, 1);
+}
+p.contact-description{
+    margin-top: -2%;
+    font-family: 'Lato', sans-serif;
+    font-size: 1vw;
+    color:rgba(84, 84, 84, 1);
+    text-align: center;
+}
+div.contact-us-form{
+    margin-top:2%;
+    width:100%;
+    height: 65%;
+    background-color:rgba(220, 237, 254, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form.contact-form{
+    width:85%;
+    height:90%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+div.contact-input{
+    margin-bottom: 2%;
+    height: 17%;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+div.input-part{
+    height: 100%;
+    width:47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+div.input-part label{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25vw;
+    color: rgba(28, 28, 28, 1);
+}
+div.input-part input{
+    height: 50%;
+    border:none;
+}
+div.message-input{
+    height: 45%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+div.message-input label{
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.25vw;
+    color: rgba(28, 28, 28, 1);
+}
+div.message-input input{
+    margin-top:2%;
+    height: 90%;
+    border:none;
+}
+div.submit-input{
+    margin-top: 2%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.submit-input input{
+    padding: 1.5% 4%;
+    border:none;
+    background-color: rgba(1, 82, 168, 1);
+    color: white;
+    cursor: pointer;
+    transition: 0.75s;
+}
+div.submit-input input:hover{
+    transform: scale(1.2);
+}
+@media screen and (max-width:500px){
+    div.contact-us{
+        top:37vh;
+        width:100vw;
+        height: 150vh;
+        margin:0;
+        /* background-color: aqua; */
+    }
+    div.new-contact-us{
+        top:7vh;
+        width:100vw;
+        height: 150vh;
+        margin:0;
+        /* background-color: aqua; */
+    }
+    div.heading-for-contact-us{
+        width:100%;
+    }
+    p.contact-us-heading01{
+        font-size: 5vw;
+    }
+    p.contact-us-heading02{
+        font-size: 7vw;
+    }
+    div.contact-ways{
+        width:90%;
+    }
+    div.contact-type-way{
+        width:34%;
+    }
+    img.contact-img{
+        height: 5vh;
+    }
+    p.contact-title{
+        font-size: 5vw;
+    }
+    p.contact-description{
+        font-size: 3.5vw;
+        width:95%;
+    }
+    div.contact-us-form{
+        margin:-5%;
+        width:90%;
+    }
+    form.contact-form{
+        width:80%;
+    }
+    div.contact-input{
+        height: 40%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    div.input-part{
+        width:100%;
+        height: 100%;
+        margin-bottom: 5%;
+    }
+    div.input-part label{
+        font-size: 4vw;
+        margin-bottom: 5%;
+    }
+    div.input-part input{
+        /* background-color: aqua; */
+        height: 80%;
+    }
+    div.message-input label{
+        font-size: 4vw;
+    }
+    div.input-part input{
+        height: 70%;
+    }
+    div.submit-input input{
+        margin-top: 5%;
+        padding: 2% 5%;
+    }
+}
+@media screen and (min-width:501px) and (max-width:800px) {
+    div.new-contact-us{
+        top:15vh;
+        width:95vw;
+        margin:0 auto;
+        height: 100vh;
+    }
+    p.contact-us-heading01{
+        font-size: 1.75vw;
+    }
+    p.contact-us-heading02{
+        font-size: 2.75;
+    }
+    div.contact-type-way{
+        width:20%;
+    }
+    p.contact-title{
+        font-size: 1.75vw;
+    }
+    p.contact-description{
+        font-size: 1.25vw;
+    }
+    div.input-part label{
+        font-size: 1.75vw;
+    }
+    div.message-input label{
+        font-size: 1.75vw;
+    }
+}
+@media screen and (min-width:801px) and (max-width:1100px) {
+    div.new-contact-us{
+        top:30vh;
+        width:85vw;
+        height: 120vh;
+    }
+    p.contact-us-heading01{
+        font-size: 1.5vw;
+    }
+    p.contact-us-heading02{
+        font-size: 2.5;
+    }
+    div.contact-type-way{
+        width:20%;
+    }
+    p.contact-title{
+        font-size: 1.5vw;
+    }
+    p.contact-description{
+        font-size: 1.15vw;
+    }
+    div.input-part label{
+        font-size: 1.5vw;
+    }
+    div.message-input label{
+        font-size: 1.5vw;
+    }
+}

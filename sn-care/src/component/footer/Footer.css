@@ -1,0 +1,323 @@
+div.footer{
+   position: relative;
+   top:350vh;
+   width:100vw;
+   height: 65vh;
+   background-color: rgba(229, 242, 239, 1);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+div.new-footer{
+    position: relative;
+    top:85vh;
+    width:100vw;
+    height: 65vh;
+    background-color: rgba(229, 242, 239, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: 2s anim-lineUp ease-out 1;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+div.about-site{
+    margin-top:-5%;
+    margin-left:2%;
+    width:27%;
+    height: 70%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+p.about-text{
+    margin-top:5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75vw;
+    color: rgba(28, 28, 28, 1);
+}
+div.details-for-user{
+    margin-top: 3%;
+    margin-left: 7%;
+    width:60%;
+    height: 80%;
+    /* background-color: rgb(169, 128, 207); */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: space-around; */
+}
+div.contact-details{
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.contact-type{
+    width:30%;
+    display: flex;
+    flex-direction: row;
+}
+p.contact-text{
+    margin-left: 5%;
+    font-family: 'Lato', sans-serif;
+    font-size:1vw;
+    color:rgba(84, 84, 84, 1);
+}
+p.opening-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.3vw;
+    color: rgb(22, 220, 150);
+}
+p.opening-text{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1vw;
+    color: rgb(22, 220, 150);
+}
+div.user-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+div.user-browser{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+}
+p.link-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.3vw;
+    color: rgba(28, 28, 28, 1);
+}
+a.footer-user-links{
+    margin-top: 5%;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.15vw;
+    color: rgba(84, 84, 84, 1);
+}
+div.subcribe-part input.subscribe-input{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.1vw;
+    border:none;
+   
+}
+div.subcribe-part input[type='text']{
+    margin-top: 15%;
+    background-color: rgba(121, 209, 215, 1);
+    color: rgba(0, 0, 0, 1);
+    width:81%;
+    padding:5% 2%;
+}
+div.subcribe-part input[type='submit']{
+    margin-top: 5%;
+    background-color:rgba(15, 227, 175, 1);
+    color: rgba(0, 0, 0, 1);
+    width:85%;
+    padding:5% 2%;
+}
+div.m-subcribe-part {
+    display: none;
+}
+@media screen and (max-width:500px) {
+    div.footer{
+        width:100vw;
+        height: auto;
+        margin:0;
+        top:40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    div.new-footer{
+        width:100vw;
+        height: auto;
+        margin:0;
+        top:20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    div.about-site{
+        width:90%;
+        margin:0;
+        /* background-color: blue; */
+    }
+    p.about-text{
+        margin: 0;
+        font-size: 5vw;
+    }
+    div.details-for-user{
+        margin:0;
+        width:100%;
+    }
+    div.contact-details{
+        margin-top: 10%;
+        height: 30%;
+        width:100%;
+    }
+    div.contact-type{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    p.contact-text{
+        margin: 0;
+        font-size: 3vw;
+    }
+    div.opening-details{
+        height:5%;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    p.opening-title{
+        font-size: 5vw;
+    }
+    p.opening-text{
+        margin-top: -3%;
+        font-size: 4vw;
+    }
+    div.user-browser{
+        width:80%;
+        margin:auto;
+    }
+    p.link-title{
+        font-size: 4.5vw;
+    }
+    a.footer-user-links{
+        font-size: 3.5vw;
+    }
+    div.subcribe-part {
+        display: none;
+    }
+    div.m-subcribe-part {
+        margin-top: 10%;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    div.m-subcribe-part input.subscribe-input{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        border:none;
+       
+    }
+    div.m-subcribe-part input[type='text']{
+        margin-top: 0%;
+        background-color: rgba(121, 209, 215, 1);  
+        color: rgba(0, 0, 0, 1);
+        width:81%;
+        padding:5% 2%;
+    }
+    div.m-subcribe-part input[type='submit']{
+        margin-top: 5%;
+        background-color:rgba(15, 227, 175, 1);
+        color: rgba(0, 0, 0, 1);
+        width:85%;
+        padding:5% 2%;
+    }
+}
+@media screen and (min-width:501px) and (max-width:800px){
+    div.new-footer{
+        top:25vh;
+        height:40vh;
+    }
+    div.about-site{
+        margin-left:4%;
+        width:28%;
+    }
+    p.about-text{
+      width:100%;
+      font-size:2vw;
+    }
+    div.details-for-user{
+        margin-top: 0%;
+        margin-left:10%;
+        width:75%;
+    }
+    div.contact-details{
+        width:90%;
+    }
+    p.contact-text{
+        font-size: 1.3vw;
+    }
+    p.opening-title{
+        font-size: 1.6vw;
+    }
+    p.opening-text{
+        font-size: 1.35vw;
+    }
+    p.link-title{
+        font-size: 1.6vw;
+    }
+    a.footer-user-links{
+        font-size: 1.4vw;
+    }
+    div.subcribe-part input.subscribe-input{
+        font-size:1.35vw;
+    }
+}
+@media screen and (min-width:801px) and (max-width:1100px){
+    div.new-footer{
+        top:40vh;
+        height:60vh;
+    }
+    div.about-site{
+        margin-left:3%;
+        width:25%;
+    }
+    p.about-text{
+      font-size:1.9vw;
+    }
+    div.details-for-user{
+        margin-top: 0%;
+        margin-left:15%;
+        width:75%;
+    }
+    div.contact-details{
+        width:90%;
+    }
+    p.contact-text{
+        font-size: 1.3vw;
+    }
+    p.opening-title{
+        font-size: 1.6vw;
+    }
+    p.opening-text{
+        font-size: 1.35vw;
+    }
+    p.link-title{
+        font-size: 1.6vw;
+    }
+    a.footer-user-links{
+        font-size: 1.4vw;
+    }
+    div.subcribe-part input.subscribe-input{
+        font-size:1.35vw;
+    }
+}

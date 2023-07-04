@@ -1,0 +1,59 @@
+div.theme{
+    position: relative;
+    top:10vh;
+    width:30vw;
+    height: 15vh;
+    font-family: 'Poppins', sans-serif ;
+    font-size: 4vw;
+    text-align: center;
+    word-spacing: 1vw;
+}
+div.new-theme{
+    position: relative;
+    top:10vh;
+    width:30vw;
+    height: 15vh;
+    /* background-color: blue; */
+    font-family: 'Poppins', sans-serif ;
+    font-size: 4vw;
+    text-align: center;
+    word-spacing: 1vw;
+    animation: 2s anim-lineUp ease-out 1;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  
+@media screen and (max-width:500px) {
+    div.theme{
+        /* visibility: visible; */
+        top:8vh;
+        width:60vw;
+        font-size: 7vw;
+    }
+    div.new-theme{
+        top:8vh;
+        width:60vw;
+        font-size: 7vw;
+    }
+}
+@media screen and (min-width:500px) and (max-width:800px){
+   div.new-theme{
+        top:8vh;
+        font-size: 4vw;
+   }
+}

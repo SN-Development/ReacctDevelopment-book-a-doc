@@ -1,0 +1,16 @@
+div.window{
+    height: 80%;
+    width:70%;
+    background-color: white;
+    border-radius:1em;
+    box-shadow:0  0.188em 1.550em rgb(113, 113, 131);
+    display: flex;
+}
+@media screen and (max-width:500px) {
+    div.window{
+        height: 70%;
+        width:75%;
+        background-color:transparent ;
+        box-shadow:none;
+    }
+}

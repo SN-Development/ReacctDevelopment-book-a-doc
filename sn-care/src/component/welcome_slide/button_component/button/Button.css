@@ -1,0 +1,52 @@
+.btn-for-slide{
+    position: relative;
+    margin-right: 7%;
+    padding: 4% 2%;
+    width:40%;
+    height: 20%;
+    /* background-color: none; */
+    background-image: linear-gradient(to right,rgb(51, 0, 255),rgb(23, 180, 237));
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif ;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: bold;
+    font-weight: 800;
+    font-size:1vw;
+    word-spacing: 2px;
+    color:rgba(255, 255, 255, 0.785);
+}
+#btn2{
+   background-color: transparent; 
+   background-image: none;
+   color: blue;
+   border: 0.4vh solid blue;
+}
+#btn1:hover{
+    background-color: transparent;
+    background-image: none;
+    font-size: 1vw;
+    color: blue;
+    border: 0.4vh solid blue;
+}
+
+@media screen and (max-width:500px){
+    a.btn-for-slide{
+        font-size:1.7vw;
+    }
+    #btn2{
+        background-image: none;
+        color: blue;
+        border: 0.2vh solid blue;
+     }
+}
+@media screen and (min-width:501px) and (max-width:800px){
+    .btn-for-slide{
+        font-size: 1.2vw;
+    }
+}
+@media screen and (min-width:801px) and (max-width:1100px){
+    .btn-for-slide{
+        font-size: 1.1vw;
+    }
+}

@@ -1,0 +1,116 @@
+div.service-wrap-border{
+    position: relative;
+    top: 0vh;
+    left: 0vw;
+    margin-left: 6%;
+    float: left;
+    display: inline-flex;
+    min-height: 250px;
+    width: 17%;
+    height:69%;
+    background-image: linear-gradient(to right, rgb(102, 0, 255), rgb(4, 112, 166));
+    padding:3px;
+}
+
+div.service-content{
+    margin-left: 0;
+    width: 100%;
+    min-height: 250px;
+    height:100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.service-icon{
+    position: absolute;
+    top:5vh;
+    left:5vw;
+    min-height: 50px;
+    height:10vh;
+    width:5vw;
+    color:black;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.service-text{
+    position: absolute;
+    top:15vh;
+    min-height: 15px;
+    /* left:1vw; */
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+    font-size: 1.5vw;
+    text-align: center;
+    word-spacing: 0.2vw;
+    color: rgb(39, 39, 220);
+}
+.service-sub-text{
+    position: absolute;
+    top:22vh;
+    left:0vw;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+    word-spacing:0.1vw;
+    margin:12%;
+}
+@media screen and (max-width:500px){
+    div.service-wrap-border{
+        width: 60vw;
+        height: 30vh;
+        margin-bottom: 5vh;
+    }
+    div.service-content{
+        visibility: visible;
+        width: 60vw;
+        height: 30vh;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around; */
+    }
+    .service-icon{
+        top:3vh;
+        left:22vw;
+        height:5vh;
+        width:12vw;
+    }
+    .service-text{
+        top:7vh;
+        left:15vw;
+        font-size: 4vw;
+    }
+    .service-sub-text{
+        top:13vh;
+        left:2vw;
+        font-size: 3vw;
+    }
+}
+@media screen and (min-width:501px) and (max-width:800px){
+    div.service-wrap-border{
+        margin-left: 3.5%;
+        width:20%;
+        height:60%;
+    }
+    img.service-icon{
+        margin-left: 10%;
+    }
+    .service-sub-text{
+        margin-top:7%;
+    }
+}
+@media screen and (min-width:801px) and (max-width:1100px){
+    div.service-wrap-border{
+        margin-left: 3.5%;
+        width:20%;
+        height: 78%;
+    }
+    img.service-icon{
+        margin-left: 10%;
+    }
+}

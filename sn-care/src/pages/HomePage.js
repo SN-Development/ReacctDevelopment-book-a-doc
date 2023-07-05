@@ -3,21 +3,18 @@ import React, { useEffect, useState } from 'react'
 import WelcomeSlide from '../component/welcome_slide/WelcomeSlide'
 import Services from '../component/services/ServicesComponent'
 import NavBar from '../component/navbar/NavBar'
-import axios, { Axios } from 'axios'
 import { useNavigate } from 'react-router-dom'
 import WhyChoosing from '../component/about/why_choosing/WhyChoosing'
 import AboutUS from '../component/about/about_us/AboutUS'
 import ContactUs from '../component/contactus/ContactUs'
 import Footer from '../component/footer/Footer'
-import Appoiintment from '../component/appointment copy/Appoiintment'
-import SideBar from '../component/sidebar/SideBar'
 import Headroom from 'react-headroom'
 
 
 export default function HomePage() {
   const [name,setName] = useState("");
   const [isLogged, setIsLogged] = useState(false)
-  const navigate  = useNavigate()
+  //const navigate  = useNavigate()
   const [isMenuBtnclicked, setIsMenuBtnClicked] = useState(false)
 
   axios.defaults.withCredentials = true;

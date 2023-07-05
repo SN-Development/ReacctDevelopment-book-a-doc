@@ -76,7 +76,7 @@ export default function RegisterForm() {
 }
 
 const submitFormInputs = (event)=>{
-  setIsSubmitted(true)
+  //setIsSubmitted(true)
   event.preventDefault()
   let tempError = errors
   tempError = FormValidation(userName,password,confirmPassword)
@@ -127,7 +127,7 @@ const submitFormInputs = (event)=>{
     // setPassword("")
     // setConfirmPassword("")
   }
-  setIsSubmitted(false)
+  //setIsSubmitted(false)
 }
 
 const goToSignIn = ()=>{

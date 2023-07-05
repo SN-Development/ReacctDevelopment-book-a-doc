@@ -15,7 +15,7 @@ const db   = mysql.createPool({
 })
 
 app.use(cors({
-    origin:['http://localhost:3000'],
+    origin:['https://warm-sorbet-3369b0.netlify.app'],
     methods:["GET","POST"],
     credentials:true
 }))

@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
-
+import axios from 'axios'
 import WelcomeSlide from '../component/welcome_slide/WelcomeSlide'
 import Services from '../component/services/ServicesComponent'
 import NavBar from '../component/navbar/NavBar'
-import { useNavigate } from 'react-router-dom'
 import WhyChoosing from '../component/about/why_choosing/WhyChoosing'
 import AboutUS from '../component/about/about_us/AboutUS'
 import ContactUs from '../component/contactus/ContactUs'

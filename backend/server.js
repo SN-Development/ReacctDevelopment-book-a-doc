@@ -14,6 +14,23 @@ const db   = mysql.createPool({
     database:'sn_care'
 })
 
+db.getConnection((error, connection) => {
+    if (error) {
+      console.error('Error acquiring connection:', error);
+      return;
+    }
+    connection.query('SELECT * FROM login', (error, results) => {
+        connection.release(); // Release the connection back to the pool
+    
+        if (error) {
+          console.error('Error executing query:', error);
+          return;
+        }
+    
+        console.log('Query results:', results);
+      });
+    })
+
 app.use(cors({
     origin:['https://warm-sorbet-3369b0.netlify.app'],
     methods:["GET","POST"],

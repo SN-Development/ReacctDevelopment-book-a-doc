@@ -46,24 +46,24 @@ export default function Footer() {
   return (
     <div className='footer' id='footer'>
       <div className='about-site'>
-        <img src='logo (2).png'  width={width>500?'70%':'50%'}style={width>600?{marginLeft:'-1vw',marginBottom:'5vh'}:{marginLeft:'-1vw',marginBottom:'5vh'}}></img>
+        <img src='logo (2).png' alt='footer-logo' width={width>500?'70%':'50%'}style={width>600?{marginLeft:'-1vw',marginBottom:'5vh'}:{marginLeft:'-1vw',marginBottom:'5vh'}}></img>
         <p className='about-text'>"Your health is our <br></br>top priority.<br></br> Book an appointment today <br></br>and let us <br></br>take care of you"</p>
       </div> 
       <div className='details-for-user'>
 
         <div className='contact-details'>
             <div className='contact-type'>
-               <img src={callImgIcon} style={width>600?{height:'5vh'}:{height:'50%',width:'35%'}}></img>
+               <img src={callImgIcon} alt='c-type-1' style={width>600?{height:'5vh'}:{height:'50%',width:'35%'}}></img>
                <p className='contact-text'>+94 76 23-45-567</p>
             </div>
             <div className='contact-type'>
-               <img src={mailImgIcon} style={width>600?{height:'5vh'}:{height:'50%',width:'35%'}}></img>
+               <img src={mailImgIcon} alt='c-type-2' style={width>600?{height:'5vh'}:{height:'50%',width:'35%'}}></img>
                <p className='contact-text'>supportdoc@gmail.com</p>
             </div>
             <div className='contact-type'>
-               <img src={twiterImgIcon} style={{height:'2.5vh',marginLeft:'10%'}}></img>
-               <img src={instaImgIcon} style={{height:'2.5vh',marginLeft:'10%'}}></img>
-               <img src={fbImgIcon} style={{height:'2.5vh',marginLeft:'10%'}}></img>
+               <img src={twiterImgIcon} alt='c-type-3' style={{height:'2.5vh',marginLeft:'10%'}}></img>
+               <img src={instaImgIcon}  alt='c-type-4' style={{height:'2.5vh',marginLeft:'10%'}}></img>
+               <img src={fbImgIcon} alt='c-type-5' style={{height:'2.5vh',marginLeft:'10%'}}></img>
             </div>
         </div>
 
@@ -75,20 +75,20 @@ export default function Footer() {
         <div className='user-browser'>
         <div className='user-links'>
            <p className='link-title'>Explore</p>
-           <a href='#' className='footer-user-links'>Home</a>
-           <a href='#' className='footer-user-links'>Department</a>
-           <a href='#' className='footer-user-links'>About</a>
-           <a href='#' className='footer-user-links'>Contact</a>
-           <a href='#' className='footer-user-links'>Log in</a>
+           <a href='/' className='footer-user-links'>Home</a>
+           <a href='/' className='footer-user-links'>Department</a>
+           <a href='/' className='footer-user-links'>About</a>
+           <a href='/' className='footer-user-links'>Contact</a>
+           <a href='/' className='footer-user-links'>Log in</a>
         </div>
 
         <div className='user-links'>
            <p className='link-title'>Departments</p>
-           <a href='#' className='footer-user-links'>Home</a>
-           <a href='#' className='footer-user-links'>Department</a>
-           <a href='#' className='footer-user-links'>About</a>
-           <a href='#' className='footer-user-links'>Contact</a>
-           <a href='#' className='footer-user-links'>Log in</a>
+           <a href='/' className='footer-user-links'>Home</a>
+           <a href='/' className='footer-user-links'>Department</a>
+           <a href='/' className='footer-user-links'>About</a>
+           <a href='/' className='footer-user-links'>Contact</a>
+           <a href='/' className='footer-user-links'>Log in</a>
         </div>
         <div className='subcribe-part'>
            <p className='link-title'>Subcribe Us !</p>

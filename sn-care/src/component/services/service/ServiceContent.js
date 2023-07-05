@@ -55,21 +55,21 @@ export default function ServiceContent() {
        <div className='mobile-s-content'>
           <div className='m-s-row'>
             <div className='m-s-content'>
-                <img src={img1} width='40%' className='m-s-img'></img>
+                <img src={img1} alt='m-s-1' width='40%' className='m-s-img'></img>
                 <p className='m-s-service'>24/7 Service</p>
             </div>
             <div className='m-s-content'>
-                <img src={img2} width='40%' className='m-s-img'></img>
+                <img src={img2} alt='m-s-2' width='40%' className='m-s-img'></img>
                 <p className='m-s-service'>Online Booking</p>
             </div>
           </div>
           <div className='m-s-row'>
             <div className='m-s-content'>
-                <img src={img3} width='40%' className='m-s-img'></img>
+                <img src={img3} alt='m-s-3' width='40%' className='m-s-img'></img>
                 <p className='m-s-service'>Health Information & Resources</p>
             </div>
             <div className='m-s-content'>
-                <img src={img4} width='40%' className='m-s-img'></img>
+                <img src={img4} alt='m-s-4' width='40%' className='m-s-img'></img>
                 <p className='m-s-service'>Prescription Refills</p>
             </div>
           </div>

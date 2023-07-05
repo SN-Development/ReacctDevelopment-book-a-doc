@@ -49,11 +49,11 @@ export default function AboutUS() {
          <div className='about-content-text'>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with information highway will close.</div>
          <div className='about-quality'>
             <div className='quality-type'>
-               <img src={treatIcon} width='30%' height='90%'></img>
+               <img src={treatIcon} width='30%' height='90%' alt='q-1'></img>
                <p className='quality-type-text'>Multi Specially Phrama Treatment</p>
             </div>
             <div className='quality-type'>
-               <img src={serviceIcon} width='30%' height='90%'></img>
+               <img src={serviceIcon} width='30%' height='90%' alt='q-2'></img>
                <p className='quality-type-text'>24 Hours Medical Service</p>
             </div>
          </div>

@@ -43,7 +43,7 @@ export default function WhyChoosing() {
   return (
     <div className='why-choosing' id='why-choosing'>
       <div className='logo-for-about'>
-         <img src='logo (2).png' style={{position:'absolute',top:'5vh',left:'3vw',width:'20%', minWidth:'150px'}}></img>
+         <img src='logo (2).png' style={{position:'absolute',top:'5vh',left:'3vw',width:'20%', minWidth:'150px'}} alt='why-choosing'></img>
       </div>
       <div className='text-content'>
 
@@ -57,34 +57,34 @@ export default function WhyChoosing() {
         <div className='row-container'>
          <div className='site-functions-row01'>
            <div className='function-text01'>
-             <img src='Tick.png'  style={{height:'4vh'}}  ></img>
+             <img src='Tick.png' alt='tik-1' style={{height:'4vh'}}  ></img>
              <p className='f-text'>Search for Doctors</p>
            </div>
            <div className='function-text01'>
-             <img src='Tick.png' style={{height:'4vh'}}></img>
+             <img src='Tick.png' alt='tik-2' style={{height:'4vh'}}></img>
              <p className='f-text'>Online Booking</p>
            </div>
            <div className='function-text01'>
-             <img src='Tick.png' className='tik-img' style={{height:'4vh'}}></img>
+             <img src='Tick.png' alt='tik-3' className='tik-img' style={{height:'4vh'}}></img>
              <p className='f-text'>Doctor Profiles</p>  
            </div>
            <div className='function-text01'>
-             <img src='Tick.png' style={{height:'4vh'}}></img>
+             <img src='Tick.png' alt='tik-4' style={{height:'4vh'}}></img>
              <p className='f-text'>Doctor Dashboards</p>  
            </div>
          </div>
 
          <div className='site-functions-row02'>
            <div className='function-text02'>
-             <img src='Tick.png' style={{height:'4vh'}}></img>
+             <img src='Tick.png' alt='tik-5' style={{height:'4vh'}}></img>
              <p className='f-text'>Patient Privacy</p>
            </div>
            <div className='function-text02'>
-             <img src='Tick.png' style={{height:'4vh'}}></img>
+             <img src='Tick.png' alt='tik-6' style={{height:'4vh'}}></img>
              <p className='f-text'>User Friendly</p>
            </div>
            <div className='function-text02'>
-             <img src='Tick.png' style={{height:'4vh'}}></img>
+             <img src='Tick.png' alt='tik-7' style={{height:'4vh'}}></img>
              <p className='f-text'>Accessible</p>  
            </div>
          </div>

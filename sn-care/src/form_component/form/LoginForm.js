@@ -1,7 +1,7 @@
 import React,{useState,} from 'react'
 import './RegisterForm.css'
 import Axios from 'axios'
-import { Link, useNavigate } from 'react-router-dom'
+import {useNavigate } from 'react-router-dom'
 import FormValidation from './FormValidation'
 
 export default function LoginForm(props) {

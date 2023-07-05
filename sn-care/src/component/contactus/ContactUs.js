@@ -49,17 +49,17 @@ export default function ContactUs() {
       </div>
       <div className='contact-ways'>
          <div className='contact-type-way'>
-            <img src={callIconImg} style={window.screen.width>=900?{height:'10vh'}:{height:'8vh'}}></img>
+            <img src={callIconImg} alt='type-1' style={window.screen.width>=900?{height:'10vh'}:{height:'8vh'}}></img>
             <p className='contact-title'>Address</p>
             <p className='contact-description'>No 24, WordPlace, Colombo</p>
          </div>
          <div className='contact-type-way'>
-            <img src={addressIconImg} style={window.screen.width>=900?{height:'10vh'}:{height:'8vh'}}></img>
+            <img src={addressIconImg} alt='type-2' style={window.screen.width>=900?{height:'10vh'}:{height:'8vh'}}></img>
             <p className='contact-title'>Call Us</p>
             <p className='contact-description'>+94 76 86 79 047 +94 76 86 79 047</p>
          </div>
          <div className='contact-type-way'>
-            <img src={mailIconImg} style={window.screen.width>=900?{height:'10vh'}:{height:'8vh'}}></img>
+            <img src={mailIconImg} alt='type-3' style={window.screen.width>=900?{height:'10vh'}:{height:'8vh'}}></img>
             <p className='contact-title'>Address</p>
             <p className='contact-description'>No 24, WordPlace, Colombo</p>
          </div>

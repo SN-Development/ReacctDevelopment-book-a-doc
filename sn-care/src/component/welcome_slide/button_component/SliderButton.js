@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react'
+
 import React from 'react'
 import './SliderButton.css'
 import Button from './button/Button'
-import SuccessAlert from '../../succes_alert/SuccessAlert';
+
 
 export default function SliderButton({loginError}) {
   

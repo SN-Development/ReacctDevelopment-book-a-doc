@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './NewBar.css' 
-import { Link, useNavigate } from 'react-router-dom'
 import User from './user/User'
 import Department from './departmets/Department'
 import {AiOutlineMenu,AiOutlineClose  } from 'react-icons/ai';
@@ -40,7 +39,7 @@ export default function NavBar({user,isLogged,setIsMenuBtnClicked}) {
                 </div>
                 
                 <div className="logo" id="logo">
-                   <img src={logo} className='logo-img'></img>
+                   <img src={logo} alt='nav-logo' className='logo-img'></img>
                 </div>
                 
 
@@ -48,7 +47,7 @@ export default function NavBar({user,isLogged,setIsMenuBtnClicked}) {
                 <div className="nav-componenets">
                     <ul className="nav-ul">
                         <li className="nav-list">
-                            <a href="" className="nav-link" id="nav-link-active">Home</a>
+                            <a href="/" className="nav-link" id="nav-link-active">Home</a>
                         </li>
                         <li class="nav-list">
                             <a href="#about-us" className="nav-link">Contact</a>
@@ -57,7 +56,7 @@ export default function NavBar({user,isLogged,setIsMenuBtnClicked}) {
                             <a href="#why-choosing" className="nav-link">About</a>
                         </li>
                         <li className="nav-list" id='department-link'>
-                            <a href="" className="nav-link" >Department
+                            <a href="/" className="nav-link" >Department
                             </a>
                             <div className='dpt'>
                                   <Department></Department>

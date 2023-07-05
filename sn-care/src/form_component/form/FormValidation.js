@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 export default function FormValidation(email,password,confirmPassword) {
     let error = {

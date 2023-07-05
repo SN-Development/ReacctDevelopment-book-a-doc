@@ -52,6 +52,6 @@ export default function Button(props) {
     
 
     return (
-    <a href='#' className="btn-for-slide" id={setId()} onClick={btnId==='btn1'?handleAppointment:''}>{text}{}</a>
+    <a href='/' className="btn-for-slide" id={setId()} onClick={btnId==='btn1'?handleAppointment:''}>{text}{}</a>
   )
 }

@@ -6,14 +6,14 @@ export default function SuccessAlert({work,description,navigation,status,appoint
     //to set class for animation circle and tik (checkmark)
     const[checkClass, setCheckClass] = useState("before-checkmark")
     const[circleClass, setCircleClass] = useState("")
-    const[isVisible,setIsVisible] = useState(true);
+    //const[isVisible,setIsVisible] = useState(true);
     //to navigate another page
     const navigate = useNavigate()
 
     //to change classes of circle and tik time to time
     useEffect(()=>{
   
-      if(circleClass=='circle'){
+      if(circleClass==='circle'){
         setTimeout(()=>setCircleClass(''),3000)
         setTimeout(()=> setCheckClass('before-checkmark'),3000)
         //document.getElementById('right-bar').style.display = ''

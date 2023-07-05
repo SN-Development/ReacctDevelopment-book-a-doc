@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import {  useState } from 'react'
 import './Appointment.css'
 import appointmentLogoImg from './images/logo.png'
 import appointmentDocImg from './images/d2.png'
-import axios, { Axios } from 'axios';
+import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import SuccessAlert from '../succes_alert/SuccessAlert';
 import AppointmentValidation from './AppointmentValidation';
@@ -86,8 +86,8 @@ const handleSubmit = (e)=>{
         //alert(response.data.Status)
         setSuccessStatus('no')
         document.getElementById('appointment-container').style.opacity='0.5'
-        timeSlot =""
-        date = ""
+        //timeSlot =""
+        //date = ""
        }
    })
    }
@@ -115,7 +115,7 @@ const goFromAppointmentToHome = ()=>{
                 <img src={appointmentLogoImg} alt='logo' style={{position:'relative',top:'-15vh',left:'0',width:'50%',height:'45vh'}}></img>
              </div>
              <div className='doctor-box'>
-                <img src={appointmentDocImg}  style={{position:'absolute',top:'-15vh',left:'-2vw',width:'35vw',height:'83vh'}}></img>
+                <img src={appointmentDocImg} alt='apointment-doc' style={{position:'absolute',top:'-15vh',left:'-2vw',width:'35vw',height:'83vh'}}></img>
              </div>
         </div>
 

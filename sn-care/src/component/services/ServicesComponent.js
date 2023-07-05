@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './ServicesComponent.css'
 import ServiceTheme from './theme/ServiceTheme'
 import ServiceContent from './service/ServiceContent'

@@ -18,7 +18,7 @@ export default function SideBar({isClicked}) {
   return (
     <div className={sideBarStyle} id='side-bar'>
       <div className='logo-part'>
-         <img src={logo} width='60%'></img>
+         <img src={logo} width='60%' alt='side-bar-logo'></img>
       </div>
       <div className='navigation-links'>
          <ul className='slide-bar-links'>

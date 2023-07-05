@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './RegisterForm.css'
 import Axios from 'axios'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import FormValidation from './FormValidation'
-import SuccessAlert from '../../component/succes_alert/SuccessAlert'
+
 
 export default function RegisterForm() {
 

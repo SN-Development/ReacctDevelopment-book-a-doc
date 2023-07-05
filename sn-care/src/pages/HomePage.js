@@ -14,7 +14,7 @@ export default function HomePage() {
   const [name,setName] = useState("");
   const [isLogged, setIsLogged] = useState(false)
   //const navigate  = useNavigate()
-  const [isMenuBtnclicked, setIsMenuBtnClicked] = useState(false)
+  //const [isMenuBtnclicked, setIsMenuBtnClicked] = useState(false)
 
   axios.defaults.withCredentials = true;
   useEffect(()=>{
@@ -42,7 +42,7 @@ export default function HomePage() {
     <div  className='Homepage' style={{margin:'0'}} id='Homepage'>
       <div className='homepage-content' id='homepage-content' style={{overflowX:'visible'}}>
         <Headroom>
-          <NavBar user ={name} isLogged={isLogged} setIsMenuBtnClicked={setIsMenuBtnClicked}>
+          <NavBar user ={name} isLogged={isLogged} >
           </NavBar>
         </Headroom>
         <WelcomeSlide></WelcomeSlide>

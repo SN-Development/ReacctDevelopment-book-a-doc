@@ -9,7 +9,7 @@ import SideBar from '../sidebar/SideBar'
 
 
 
-export default function NavBar({user,isLogged,setIsMenuBtnClicked}) {
+export default function NavBar({user,isLogged}) {
   
   //to set true or false when clicked menu
   const [isClickedMenuBar, setISClickedMenuBar] = useState(false)
@@ -18,11 +18,11 @@ export default function NavBar({user,isLogged,setIsMenuBtnClicked}) {
   const handleMenuBar = ()=>{
     if(!isClickedMenuBar){
       setISClickedMenuBar(true) //for change icon
-      setIsMenuBtnClicked(true) //for sidebar
+      //setIsMenuBtnClicked(true) //for sidebar
     }
     else{
       setISClickedMenuBar(false)
-      setIsMenuBtnClicked(false)
+     // setIsMenuBtnClicked(false)
       setTimeout(() => {
         
       }, 700);

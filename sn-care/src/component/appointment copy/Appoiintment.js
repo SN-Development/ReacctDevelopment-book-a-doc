@@ -15,10 +15,11 @@ const navigate = useNavigate()
 const [successStatus,setSuccessStatus] = useState('not-say')  
 const [department, setDepartment] = useState('');
 
-const [paitent,setPatient] = useState({
-  patientType:'',
-  //IdType :'',
-})
+// const [paitent,setPatient] = useState({
+//   patientType:'',
+//   //IdType :'',
+// })
+const [patientType,setPatientType] = useState('')
 const [patientIdType, setPatientIdType] = useState('')
 const [patientName, setPatientName] = useState('')
 const [patientContactNo, setPatientContactNo] = useState('')
@@ -28,7 +29,7 @@ const [date,setDate] = useState('')
 const [timeSlot,setTimeSlot] = useState('')
 
 const inputValues = {
-  pType : paitent.patientType,
+  pType : patientType,
   pName : patientName,
   pContact:patientContactNo,
   pIdType:patientIdType,
@@ -135,7 +136,7 @@ const goFromAppointmentToHome = ()=>{
                        <input type="radio" id="myself" name="patinet-type" value='myself'
                         style={{cursor:'pointer'}}
                         onClick={(e)=>{
-                          paitent.patientType = e.target.value
+                          setPatientType(e.target.value)
                           //alert( paitent.patientType)
                          }
                         }
@@ -147,7 +148,7 @@ const goFromAppointmentToHome = ()=>{
                        <input type="radio" id="other" name="patinet-type" value="other"
                          style={{cursor:'pointer'}}
                          onClick={(e)=>{
-                          paitent.patientType = e.target.value
+                          setPatientType(e.target.value)
                           //alert( paitent.patientType)
                          }
                         }

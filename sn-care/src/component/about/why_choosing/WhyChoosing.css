@@ -155,7 +155,7 @@ p.f-text{
         width:100%;
         margin:0;
         flex-direction: row;
-        align-items:start;
+        /* align-items:start; */
         /* justify-content: space-between; */
         /* background-color: blue; */
     }

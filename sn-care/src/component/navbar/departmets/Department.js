@@ -9,7 +9,7 @@ export default function Department() {
 
       <div className='link-container'>
 
-        <div className='link'>
+        {/* <div className='link'>
            <a  href='/' className='d-link'>Neurology</a>
         </div>
         <div className='link'>
@@ -31,7 +31,7 @@ export default function Department() {
         </div>
         <div className='link'>
           <a  href='/' className='d-link'></a>   
-        </div>
+        </div> */}
 
       </div>
 

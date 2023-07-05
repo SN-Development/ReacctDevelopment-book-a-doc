@@ -10,7 +10,7 @@ export default function RegisterForm() {
   const [userName,setUserName] = useState("")
   const [password,setPassword] = useState("")
   const [confirmPassword,setConfirmPassword] = useState("")
-  const [isSubmitted, setIsSubmitted] = useState(false)
+  //const [isSubmitted, setIsSubmitted] = useState(false)
   const nevigate = useNavigate()
   
   //to get the erros

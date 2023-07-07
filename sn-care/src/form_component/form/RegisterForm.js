@@ -112,7 +112,7 @@ const submitFormInputs = (event)=>{
  
   if(((!isEmailError)&&(!isPasswordError)&&(!isConfirmPasswordError))&&((userName!=='')&&(password!=='')&&(confirmPassword!==''))){
     
-    Axios.post('http://localhost:3008/api/register',{
+    Axios.post('/api/register',{
       userName:userName,
       password:password,
     }).then(res=>{

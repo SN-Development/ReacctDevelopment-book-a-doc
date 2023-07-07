@@ -7,7 +7,7 @@ export default function User({logged}) {
   
   const navigate = useNavigate()
   const handleSignOut = ()=>{
-    axios.get('http://localhost:3008/api/loginout').then(res=>{
+    axios.get('/api/loginout').then(res=>{
       if(res.data.Status === 'Success')
       {
           logged = false;

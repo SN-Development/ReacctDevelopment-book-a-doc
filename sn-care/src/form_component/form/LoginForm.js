@@ -64,7 +64,7 @@ export default function LoginForm(props) {
      setIsPasswordError(false)
    }
    if(((!isUserNameError)&&(!isPasswordError)) &&((userName!=='')&& (password!==''))){
-        Axios.post('http://localhost:3008/api/login',{
+        Axios.post('/api/login',{
         userName:userName,
         password:password,
       }).then(response=>{

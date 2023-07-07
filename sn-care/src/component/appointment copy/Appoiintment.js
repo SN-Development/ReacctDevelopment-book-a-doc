@@ -70,7 +70,7 @@ const handleSubmit = (e)=>{
    setError(tempError)
    
    if(tempError.length===0){
-    axios.post('http://localhost:3008/api/appointment',{
+    axios.post('/api/appointment',{
       doctor:doctor,
       date: date,
       timeSlot :timeSlot

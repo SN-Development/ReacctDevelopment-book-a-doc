@@ -14,11 +14,11 @@ const app  = express()
 //     database:'sn_care'
 // })
 
-const db = mysql.createPool({
-    host:'bdp8dkgd9zsnalqvs13y-mysql.services.clever-cloud.com',
-    user:'ulj0efupmv2ddrxr',
-    password:'UARshKhnQOH3jP0BKYW5',
-    database:'bdp8dkgd9zsnalqvs13y'
+const db   = mysql.createPool({
+    host:'bypopnusemkxar0vqkti-mysql.services.clever-cloud.com',
+    user:'uwnq6nr5jl5gb74v',
+    password:'EUcdyJcxXENLz5eNVVSi',
+    database:'bypopnusemkxar0vqkti'
 })
 
 db.getConnection((error, connection) => {
@@ -38,11 +38,17 @@ db.getConnection((error, connection) => {
       });
     })
 
-app.use(cors({
-    origin:['https://warm-sorbet-3369b0.netlify.app'],
-    methods:["GET","POST"],
-    credentials:true
-}))
+// app.use(cors({
+//     origin:['https://warm-sorbet-3369b0.netlify.app'],
+//     methods:["GET","POST"],
+//     credentials:true
+// }))
+// app.use(cors({
+//     origin:['http://localhost:3000'],
+//     methods:["GET","POST"],
+//     credentials:true
+// }))
+
 app.use(express.json())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))

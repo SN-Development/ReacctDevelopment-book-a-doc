@@ -95,17 +95,17 @@ app.get('/api/loginout',(req,res)=>{
     return res.json({Status:"Success"})
 })
 
-app.get('/api/test',(req,res)=>{
-    const sqlSelect = "Select * From login"
-    db.query(sqlSelect,(err,result)=>{
-        if(err){
-            return res.json(err)
-        }
-        else{
-            return res.json(result)
-        }
-    })
-})
+// app.get('/api/test',(req,res)=>{
+//     const sqlSelect = "Select * From login"
+//     db.query(sqlSelect,(err,result)=>{
+//         if(err){
+//             return res.json(err)
+//         }
+//         else{
+//             return res.json(result)
+//         }
+//     })
+// })
 // app.get('/api/home',(req,res)=>{
 //     if(req.session.user){
 //         return res.json({valid:true,user:req.session.user})

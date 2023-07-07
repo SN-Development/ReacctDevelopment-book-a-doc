@@ -121,7 +121,7 @@ const submitFormInputs = (event)=>{
       setPassword('')
       setConfirmPassword('')
       //document.getElementById('register-success-alt').style.visibility = 'visible'
-      //nevigate('/success-alert')
+      nevigate('/success-alert')
     })
     // setUserName("")
     // setPassword("")

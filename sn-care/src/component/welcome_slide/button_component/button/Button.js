@@ -15,7 +15,7 @@ export default function Button(props) {
             document.getElementById('contact-us').style.display = 'none'
             document.getElementById('footer').style.display = 'none'
         }
-        axios.get('http://localhost:3008/api/gotoappointment').then((response)=>{
+        axios.get('/api/gotoappointment').then((response)=>{
             if(response.data.Status === 'Success'){
                 //alert(response.data.user)
                 navigate('/appointment')

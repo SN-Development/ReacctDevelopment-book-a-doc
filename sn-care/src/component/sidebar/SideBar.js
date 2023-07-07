@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './SideBar.css'
 import logo from './images/logo (2).png'
+import { Link } from 'react-router-dom'
 
 export default function SideBar({isClicked}) {
   const [sideBarStyle, setSideBarStyle] = useState('hide-side-bar')
@@ -26,7 +27,7 @@ export default function SideBar({isClicked}) {
             <li className='slide-bar-link'><a href='/'>Department</a></li>
             <li className='slide-bar-link'><a href='#why-choosing'>About</a></li>
             <li className='slide-bar-link'><a href='#contact-us'>Contact</a></li>
-            <li className='slide-bar-link'><a href='/login'>Login</a></li>
+            <li className='slide-bar-link'><Link to='/login'>Log in</Link></li>
          </ul>
       </div>
     </div>

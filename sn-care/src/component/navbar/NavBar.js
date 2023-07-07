@@ -71,7 +71,7 @@ export default function NavBar({user,isLogged}) {
                                   <User logged={isLogged}></User>
                                   
                                </div>)
-                               :<Link to='/login'>Log in</Link>}
+                               :<div className='nav-link'><Link to='/login' style={{textDecoration:'none'}}>Log in</Link></div>}
                         </li>
                     </ul>
                 </div>

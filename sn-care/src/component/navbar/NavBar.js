@@ -5,6 +5,7 @@ import Department from './departmets/Department'
 import {AiOutlineMenu,AiOutlineClose  } from 'react-icons/ai';
 import logo from './images/logo (2).png'
 import SideBar from '../sidebar/SideBar'
+import { Link } from 'react-router-dom';
 
 
 
@@ -70,7 +71,7 @@ export default function NavBar({user,isLogged}) {
                                   <User logged={isLogged}></User>
                                   
                                </div>)
-                               :<a href="/login"  className='nav-link'>Login</a>}
+                               :<Link to='/login'>Log in</Link>}
                         </li>
                     </ul>
                 </div>

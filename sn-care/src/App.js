@@ -17,9 +17,9 @@ function App() {
   return (
     <div className="App" id='App'>
       <Routes>
-        <Route path='/login' element={<HomePage></HomePage>}></Route>
+        <Route path='/' element={<HomePage></HomePage>}></Route>
         <Route path='/register' element={<RegisterPage></RegisterPage>}></Route>
-        <Route path='/' element={<Login></Login>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/loading' element={<Loading ></Loading>}></Route>
         <Route path='/success-alert' element={<SuccessAlert work='Registeration' description ='Now you can use your credentials to login to the system.' navigation='/login'></SuccessAlert>}></Route>

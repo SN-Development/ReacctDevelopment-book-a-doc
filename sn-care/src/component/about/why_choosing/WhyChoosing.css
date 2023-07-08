@@ -121,7 +121,7 @@ p.f-text{
         height:75vh;
         margin:auto;
         padding: 0%;
-        background-color:rgba(163, 204, 252, 0.913);
+        background-color:rgb(181, 240, 248);
     }
     div.new-why-choosing{
         top:-10vh;
@@ -131,7 +131,7 @@ p.f-text{
         max-height: 570px;
         margin:auto;
         padding: 0%;
-        background-color:rgba(163, 204, 252, 0.913);
+        background-color:rgb(181, 240, 248);
     }
     div.logo-for-about{
         display:none;

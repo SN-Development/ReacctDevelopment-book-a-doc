@@ -24,10 +24,10 @@ div.new-slider-btn{
 
 @media screen and (max-width:500px) {
     div.slider-btn{
-        top:40%;
+        top:37%;
         margin-top:0%;
         height:7vh;
-        width:50vw;
+        width:60vw;
     }
   }
 

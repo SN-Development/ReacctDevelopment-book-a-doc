@@ -54,14 +54,6 @@ ul.nav-ul{
 li.nav-list{
     padding: 0% 4%;
 }
-a.nav-link{
-    text-decoration: none;
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
-    font-style: bold;
-    font-weight: 1000;
-    text-transform: uppercase;
-}
 div.nav-link{
     text-decoration: none;
     font-size: 1rem;
@@ -75,18 +67,14 @@ div.nav-link:hover{
     border-bottom:3px solid blueviolet;
     color:rgba(0, 0, 255, 0.757);
 }
-div.nav-link-active{
+.link{
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-style: bold;
-    font-weight: 1000;
-    text-transform: uppercase;
-    color:blue;
 }
-a.nav-link:hover{
-    cursor: pointer;
-    border-bottom:3px solid blueviolet;
-    color:rgba(0, 0, 255, 0.757);
+.link:active{
+    color:inherit;
+}
+#nav-link-active{
+    color:blue;
 }
 div.dpt{
     

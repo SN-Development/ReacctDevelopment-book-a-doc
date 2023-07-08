@@ -48,24 +48,24 @@ export default function NavBar({user,isLogged}) {
                 <div className="nav-componenets">
                     <ul className="nav-ul">
                         <li className="nav-list">
-                           <div className='nav-link nav-link-active'>
-                              <Link to='/' style={{textDecoration:'none'}}>Home</Link>
+                           <div className='nav-link'>
+                              <Link to='/' className='link' id='nav-link-active'>Home</Link>
                            </div>
                         </li>
                         <li class="nav-list">
                            <div className='nav-link'>
-                              <Link to='/login' style={{textDecoration:'none'}}>Contact</Link>
+                              <Link to='/login' className='link'>Contact</Link>
                            </div>  
                         </li>
                         <li className="nav-list">
                             <div className='nav-link'>
-                              <Link to='/login' style={{textDecoration:'none'}}>About</Link>
+                              <Link to='/login' className='link'>About</Link>
                             </div>
                         </li>
 
                         <li className="nav-list" id='department-link'>
                             <div className='nav-link'>
-                              <Link to='/login' style={{textDecoration:'none'}}>Department</Link>
+                              <Link to='/login' className='link'>Department</Link>
                             </div>
                             <div className='dpt'>
                                   <Department></Department>
@@ -80,7 +80,7 @@ export default function NavBar({user,isLogged}) {
                                   <User logged={isLogged}></User>
                                   
                                </div>)
-                               :<div className='nav-link'><Link to='/login' style={{textDecoration:'none'}}>Log in</Link></div>}
+                               :<div className='nav-link'><Link to='/login' className='link'>Log in</Link></div>}
                         </li>
                     </ul>
                 </div>

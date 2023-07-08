@@ -28,13 +28,16 @@ div.new-text-component{
    }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:400px) {
    div.text-component{
       /* background-color: aqua; */
-      top:35%;
-      height:45%;
-      width:65vw;
+      top:40%;
+      height:40%;
+      width:75vw;
    }
+}
+@media screen and (min-width:451px) and (max-width:500px){
+
 }
 @media screen and (min-width:501px) and (max-width:700px){
    div.text-component{

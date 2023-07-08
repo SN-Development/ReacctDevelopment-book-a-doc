@@ -13,7 +13,7 @@ div#text-02{
 @media screen and (max-width:500px) {
     div.htext{
       width:100%;
-      font-size: 6.5vw;
+      font-size:8vw;
       /* background-color: blueviolet;  */
     }
     div#text-02{

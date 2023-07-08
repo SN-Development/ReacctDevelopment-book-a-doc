@@ -22,9 +22,9 @@ div.new-slider-btn{
     left: 0%;
 } */
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:400px) {
     div.slider-btn{
-        top:33%;
+        top:40%;
         margin-top:0%;
         height:5vh;
         width:50vw;

@@ -118,14 +118,16 @@ p.f-text{
     div.why-choosing{
         top:30vh;
         width:90vw;
-        height: 65vh;
+        height:75vh;
         margin:auto;
         padding: 0%;
     }
     div.new-why-choosing{
-        top:-5vh;
+        top:-6vh;
         width:90vw;
-        height: 65%;
+        min-height: 450px;
+        height: 65vh;
+        max-height: 600px;
         margin:auto;
         padding: 0%;
     }
@@ -154,6 +156,7 @@ p.f-text{
         height: 50%;
         width:100%;
         margin:0;
+        margin-bottom: 10%;
         flex-direction: row;
         /* align-items:start; */
         /* justify-content: space-between; */

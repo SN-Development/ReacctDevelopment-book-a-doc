@@ -87,6 +87,10 @@ export default function WhyChoosing() {
              <img src='Tick.png' alt='tik-7' style={{height:'4vh'}}></img>
              <p className='f-text'>Accessible</p>  
            </div>
+           <div className='function-text02' style={{visibility:'hidden'}}>
+             <img src='Tick.png' alt='tik-7' style={{height:'4vh'}}></img>
+             <p className='f-text'>Accessible</p>  
+           </div>
          </div>
         </div> 
       </div>

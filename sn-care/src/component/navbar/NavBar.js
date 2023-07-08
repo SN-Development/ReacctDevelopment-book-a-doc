@@ -48,21 +48,30 @@ export default function NavBar({user,isLogged}) {
                 <div className="nav-componenets">
                     <ul className="nav-ul">
                         <li className="nav-list">
-                            <a href="/" className="nav-link" id="nav-link-active">Home</a>
+                           <div className='nav-link nav-link-active'>
+                              <Link to='/' style={{textDecoration:'none'}}>Home</Link>
+                           </div>
                         </li>
                         <li class="nav-list">
-                            <a href="#about-us" className="nav-link">Contact</a>
+                           <div className='nav-link'>
+                              <Link to='/login' style={{textDecoration:'none'}}>Contact</Link>
+                           </div>  
                         </li>
                         <li className="nav-list">
-                            <a href="#why-choosing" className="nav-link">About</a>
+                            <div className='nav-link'>
+                              <Link to='/login' style={{textDecoration:'none'}}>About</Link>
+                            </div>
                         </li>
+
                         <li className="nav-list" id='department-link'>
-                            <a href="/" className="nav-link" >Department
-                            </a>
+                            <div className='nav-link'>
+                              <Link to='/login' style={{textDecoration:'none'}}>Department</Link>
+                            </div>
                             <div className='dpt'>
                                   <Department></Department>
                             </div>
                         </li>
+
                         <li className="nav-list">
                            
                             {isLogged?

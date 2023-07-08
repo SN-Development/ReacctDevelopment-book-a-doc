@@ -136,6 +136,7 @@ const goToSignIn = ()=>{
 }
 
   return (
+   <div>
     <div className='signup-form'>
 
       <p className='signup-text'>Sign Up</p>
@@ -180,6 +181,8 @@ const goToSignIn = ()=>{
          
 
     </div>
-  
+
+    
+  </div>
   )
 }

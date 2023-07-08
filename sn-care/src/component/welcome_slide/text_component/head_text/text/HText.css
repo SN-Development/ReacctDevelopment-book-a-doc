@@ -7,7 +7,7 @@ div.htext{
     font-size: 4.5vw;
 }
 div#text-01{
-  color:rgb(11, 93, 245);
+  color:blue;
 }
 
 div#text-02{
@@ -20,6 +20,9 @@ div#text-02{
       width:100%;
       font-size:8vw;
       /* background-color: blueviolet;  */
+    }
+    div#text-01{
+      color:rgb(11, 93, 245);
     }
     div#text-02{
       margin-top: -4%;

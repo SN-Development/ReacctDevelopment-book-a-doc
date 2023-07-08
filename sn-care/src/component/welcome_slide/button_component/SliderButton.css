@@ -2,8 +2,8 @@ div.slider-btn{
     position: relative;
     top:40%;
     left:7vw;
-    width:28%;
-    height:10%;
+    width:35%;
+    height:15%;
     /* background-color: pink; */
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@ div.new-slider-btn{
     div.slider-btn{
         top:40%;
         margin-top:0%;
-        height:5vh;
+        height:7vh;
         width:50vw;
     }
   }

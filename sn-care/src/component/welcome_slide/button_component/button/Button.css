@@ -3,8 +3,9 @@
     margin-right: 7%;
     padding: 4% 2%;
     width:40%;
-    height: 20%;
+    height: 50%;
     /* background-color: none; */
+    border:none;
     background-image: linear-gradient(to right,rgb(51, 0, 255),rgb(23, 180, 237));
     text-decoration: none;
     font-family: 'Roboto', sans-serif ;
@@ -31,13 +32,18 @@
 }
 
 @media screen and (max-width:500px){
-    a.btn-for-slide{
+    .btn-for-slide{
         font-size:1.7vw;
+        background-image: linear-gradient(to right,rgb(0, 106, 255),rgb(23, 208, 237));
     }
     #btn2{
         background-image: none;
-        color: blue;
-        border: 0.2vh solid blue;
+        color:rgb(11, 93, 245);
+        border: 0.2vh solid rgb(11, 93, 245);;
+     }
+     #btn1:hover{
+        color:rgb(11, 93, 245);
+        border: 0.2vh solid rgb(11, 93, 245);;
      }
 }
 @media screen and (min-width:501px) and (max-width:800px){

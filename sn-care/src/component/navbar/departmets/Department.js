@@ -1,5 +1,6 @@
 import React from 'react'
 import './Department.css'
+import { Link } from 'react-router-dom';
 
 
 export default function Department() {
@@ -9,14 +10,14 @@ export default function Department() {
 
       <div className='link-container'>
 
-        {/* <div className='link'>
-           <a  href='/' className='d-link'>Neurology</a>
+        <div className='link'>
+           <Link to='/' className='d-link'>Neurology</Link>
         </div>
         <div className='link'>
-           <a  href='/' className='d-link'>Dentist</a>
+           <Link to='/' className='d-link'>Dentist</Link>
         </div>
         <div className='link'>
-           <a  href='/' className='d-link'>Ophthalmology</a>
+           <Link to='/' className='d-link'>Ophthalmology</Link>
         </div>
 
       </div>
@@ -24,14 +25,14 @@ export default function Department() {
       <div className='link-container'>
 
         <div className='link'>
-           <a  href='/' className='d-link'>Cardiology</a>
+           <Link to='/' className='d-link'>Cardiology</Link>
         </div>
         <div className='link'>
-           <a  href='/' className='d-link'>Surgery</a>   
+           <Link to='/' className='d-link'>Surgery</Link> 
         </div>
         <div className='link'>
-          <a  href='/' className='d-link'></a>   
-        </div> */}
+          <Link to='/' className='d-link'></Link>  
+        </div>
 
       </div>
 

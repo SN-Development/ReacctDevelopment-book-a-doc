@@ -30,7 +30,7 @@ export default function HText(props) {
   ,[]);
   
   return (
-     <div className='htext' style={id==="text-01"? {color:'blue'}:{color:'black'}} id={id}>
+     <div className='htext' id={id}>
          {id==="text-01"?headingText01:headingText02}
      </div>
   )

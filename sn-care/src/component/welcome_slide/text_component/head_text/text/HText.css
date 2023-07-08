@@ -6,7 +6,12 @@ div.htext{
     font-family: 'Poppins', sans-serif;
     font-size: 4.5vw;
 }
+div#text-01{
+  color:blue;
+}
+
 div#text-02{
+  color:black;
   margin-top: -1%;
 }
 

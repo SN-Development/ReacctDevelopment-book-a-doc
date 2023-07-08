@@ -96,7 +96,7 @@ p.quality-type-text{
         justify-content: center;
     }
     div.new-about-us{
-        top:-5vh;
+        top:0vh;
         width:100vw;
         height: 60vh;
         background-image: none;

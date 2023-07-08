@@ -88,10 +88,10 @@ div.new01-nav-side-bar{
         margin:auto;
         max-width:100vw;
         min-height:150px;
-        height:35vh;
+        height:45vh;
         max-height:250px;
         background-image:  url(./images/4.png);
-        background-size: cover;
+        background-size:cover;
         background-position: center;
         background-repeat:no-repeat;
     }

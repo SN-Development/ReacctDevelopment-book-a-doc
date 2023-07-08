@@ -99,8 +99,8 @@ div.new01-nav-side-bar{
 @media screen and (min-width:451px) and (max-width:500px){
     div.image-slider{
         /* min-height: 300px; */
-        height: 45vh;
-        max-height: 300px;
+        height:45vh;
+        max-height:300px;
     }
 }
 @media screen and (min-width:501px) and (max-width:800px){

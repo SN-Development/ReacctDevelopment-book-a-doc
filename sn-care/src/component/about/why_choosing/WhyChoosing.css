@@ -127,7 +127,7 @@ p.f-text{
         top:-10vh;
         width:95vw;
         min-height: 450px;
-        height: 60vh;
+        height: 68vh;
         max-height: 570px;
         margin:auto;
         padding: 0%;
@@ -154,13 +154,13 @@ p.f-text{
     div.text-for-choosing{
        text-align: justify;
        width:90%;
-       font-size: 4.5vw;
+       font-size:5vw;
     }
     div.row-container{
         height: 50%;
         width:95%;
         margin:0;
-        margin-bottom: 5%;
+        margin-bottom: 2%;
         flex-direction: row;
         /* align-items:start; */
         /* justify-content: space-between; */

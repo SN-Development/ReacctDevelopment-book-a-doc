@@ -88,7 +88,7 @@ p.quality-type-text{
     div.about-us{
         top:40vh;
         width:100vw;
-        height: 60vh;
+        height: 50vh;
         background-image: none;
         background-position: center;
         display: flex;
@@ -98,7 +98,7 @@ p.quality-type-text{
     div.new-about-us{
         top:0vh;
         width:100vw;
-        height: 60vh;
+        height: 50vh;
         background-image: none;
         background-position: center;
         display: flex;
@@ -117,7 +117,7 @@ p.quality-type-text{
     }
     div.about-title-text{
         width:100%;
-        font-size: 7vw;
+        font-size: 6vw;
         text-align:center;
     }
     div.about-content-text{

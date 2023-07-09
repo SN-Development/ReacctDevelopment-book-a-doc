@@ -195,11 +195,12 @@ div.m-subcribe-part {
     }
     p.opening-title{
         font-size: 5vw;
-        color:rgb(0, 170, 255)
+        color:rgba(28, 28, 28, 1);
     }
     p.opening-text{
         margin-top: -3%;
         font-size: 4vw;
+        color:rgb(0, 106, 255);
     }
     div.user-browser{
         width:80%;

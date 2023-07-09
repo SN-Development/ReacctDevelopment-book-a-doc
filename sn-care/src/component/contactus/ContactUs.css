@@ -162,7 +162,7 @@ div.submit-input{
 div.submit-input input{
     padding: 1.5% 4%;
     border:none;
-    /* background-color: rgba(1, 82, 168, 1); */
+    background-color: rgba(1, 82, 168, 1);
     color: white;
     cursor: pointer;
     transition: 0.75s;

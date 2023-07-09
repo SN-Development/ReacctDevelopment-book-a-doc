@@ -5,6 +5,7 @@ import mailImgIcon from './images/Mail (1).png'
 import twiterImgIcon from './images/Twiter.png'
 import instaImgIcon from './images/Insta.png'
 import fbImgIcon from './images/Fb.png'
+import logoImg from './images/logo (2).png'
 
 export default function Footer() {
     const width = window.innerWidth
@@ -46,7 +47,7 @@ export default function Footer() {
   return (
     <div className='footer' id='footer'>
       <div className='about-site'>
-        <img src='logo (2).png' alt='footer-logo' width={width>500?'70%':'50%'}style={width>600?{marginLeft:'-1vw',marginBottom:'5vh'}:{marginLeft:'-1vw',marginBottom:'5vh'}}></img>
+        <img src={logoImg} alt='footer-logo' width={width>500?'70%':'50%'}style={width>600?{marginLeft:'-1vw',marginBottom:'5vh'}:{marginLeft:'-1vw',marginBottom:'5vh'}}></img>
         <p className='about-text'>"Your health is our <br></br>top priority.<br></br> Book an appointment today <br></br>and let us <br></br>take care of you"</p>
       </div> 
       <div className='details-for-user'>

@@ -232,14 +232,15 @@ div.m-subcribe-part {
     }
     div.m-subcribe-part input[type='text']{
         margin-top: 0%;
-        background-color: rgb(180, 210, 242);  
+        background-color: rgb(221, 232, 244);  
         color: rgba(0, 0, 0, 1);
         width:81%;
         padding:5% 2%;
     }
     div.m-subcribe-part input[type='submit']{
         margin-top: 5%;
-        background-color:rgb(51, 125, 244);
+        /* background-color:rgb(51, 125, 244); */
+        background-image: linear-gradient(to right,rgb(0, 106, 255),rgb(23, 208, 237));
         color: rgba(0, 0, 0, 1);
         width:85%;
         padding:5% 2%;

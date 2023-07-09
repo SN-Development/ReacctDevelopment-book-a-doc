@@ -162,7 +162,7 @@ div.submit-input{
 div.submit-input input{
     padding: 1.5% 4%;
     border:none;
-    background-color: rgba(1, 82, 168, 1);
+    /* background-color: rgba(1, 82, 168, 1); */
     color: white;
     cursor: pointer;
     transition: 0.75s;
@@ -248,6 +248,7 @@ div.submit-input input:hover{
     div.submit-input input{
         margin-top: 5%;
         padding: 2% 5%;
+        background-image: linear-gradient(to right,rgb(0, 106, 255),rgb(23, 208, 237));
     }
 }
 @media screen and (min-width:501px) and (max-width:800px) {

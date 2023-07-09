@@ -195,6 +195,7 @@ div.m-subcribe-part {
     }
     p.opening-title{
         font-size: 5vw;
+        color:rgb(0, 170, 255)
     }
     p.opening-text{
         margin-top: -3%;
@@ -231,14 +232,14 @@ div.m-subcribe-part {
     }
     div.m-subcribe-part input[type='text']{
         margin-top: 0%;
-        background-color: rgba(121, 209, 215, 1);  
+        background-color: rgb(180, 210, 242);  
         color: rgba(0, 0, 0, 1);
         width:81%;
         padding:5% 2%;
     }
     div.m-subcribe-part input[type='submit']{
         margin-top: 5%;
-        background-color:rgba(15, 227, 175, 1);
+        background-color:rgb(51, 125, 244);
         color: rgba(0, 0, 0, 1);
         width:85%;
         padding:5% 2%;

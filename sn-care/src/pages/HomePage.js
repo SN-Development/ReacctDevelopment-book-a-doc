@@ -45,12 +45,15 @@ export default function HomePage() {
           <NavBar user ={name} isLogged={isLogged} >
           </NavBar>
         </Headroom>
-        <WelcomeSlide></WelcomeSlide>
-        <Services></Services>
-        <WhyChoosing></WhyChoosing>
-        <AboutUS></AboutUS>
-        <ContactUs></ContactUs>
-        <Footer></Footer>
+        <div id='home-content'>
+         <WelcomeSlide></WelcomeSlide>
+         <Services></Services>
+         <WhyChoosing></WhyChoosing>
+         <AboutUS></AboutUS>
+         <ContactUs></ContactUs>
+         <Footer></Footer>
+        </div>
+
         {/* <SideBar isClicked={isMenuBtnclicked}></SideBar> */}
       </div>
       {/* <Appoiintment></Appoiintment> */}

@@ -13,16 +13,20 @@ export default function SideBar({isClicked}) {
   const handleNavItem = (index)=>{
      //alert(currentPath)
      setIsNavLinkNumber(index)
-
+     //setSideBarStyle('hide-side-bar')
+     //document.getElementById('home-content').style.opacity = '1'
   }
 
   useEffect(()=>{
     if(isClicked){
         setSideBarStyle('display-side-bar')
+        //document.getElementById('home-content').style.backgroundColor = 'black'
+        document.getElementById('home-content').style.opacity = '0.5'
         //alert("true")
     }
     else{
         setSideBarStyle('hide-side-bar')
+        document.getElementById('home-content').style.opacity = '1'
         //alert("false")
     }
   },[isClicked])
@@ -34,9 +38,9 @@ export default function SideBar({isClicked}) {
       <div className='navigation-links '>
          <ul className='slide-bar-links'>
 
-            <li className={isNavLinkNumber === 1 && currentPath ==='/'?'slide-bar-link-active':'slide-bar-link'} 
+            <li className={(isNavLinkNumber === null || isNavLinkNumber === 1) && currentPath ==='/'?'slide-bar-link-active':'slide-bar-link'} 
               onClick={()=>handleNavItem(1)}>
-              <Link className={isNavLinkNumber === 1 && currentPath ==='/'?'s-b-link-active':'s-b-link'} to='/'>Home</Link>
+              <Link className={(isNavLinkNumber === null || isNavLinkNumber === 1) && currentPath ==='/'?'s-b-link-active':'s-b-link'} to='/'>Home</Link>
             </li>
 
             <li className={isNavLinkNumber === 2 && currentPath ==='/'?'slide-bar-link-active':'slide-bar-link'} 

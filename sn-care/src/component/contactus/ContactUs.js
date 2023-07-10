@@ -26,7 +26,7 @@ export default function ContactUs() {
           document.getElementById("contact-us").classList.remove("contact-us")
           document.getElementById("contact-us").classList.add("new-contact-us")
       }
-      else if(newScrollTop>1100 && (screenWidth<=500)){
+      else if(newScrollTop>1150 && (screenWidth<=500)){
          document.getElementById("contact-us").classList.remove("contact-us")
          document.getElementById("contact-us").classList.add("new-contact-us")
      }

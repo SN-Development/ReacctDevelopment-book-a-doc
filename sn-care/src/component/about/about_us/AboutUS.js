@@ -26,7 +26,7 @@ export default function AboutUS() {
           document.getElementById("about-us").classList.remove("about-us")
           document.getElementById("about-us").classList.add("new-about-us")
        }
-       else if(newScrollTop>650 && (screenWidth<=500)){
+       else if(newScrollTop>750 && (screenWidth<=500)){
          document.getElementById("about-us").classList.remove("about-us")
          document.getElementById("about-us").classList.add("new-about-us")
       }

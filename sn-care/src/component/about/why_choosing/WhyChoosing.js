@@ -25,10 +25,10 @@ export default function WhyChoosing() {
           document.getElementById("why-choosing").classList.remove("why-choosing")
           document.getElementById("why-choosing").classList.add("new-why-choosing")
       }
-      else if(newScrollTop>150 && (screenWidth<=500)){
+      else if(newScrollTop>220 && (screenWidth<=500)){
         document.getElementById("why-choosing").classList.remove("why-choosing")
         document.getElementById("why-choosing").classList.add("new-why-choosing")
-    }
+     }
       else{
          //document.body.style.backgroundColor = "";
          document.getElementById("why-choosing").classList.remove("new-why-choosing");

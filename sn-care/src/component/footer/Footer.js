@@ -30,7 +30,7 @@ export default function Footer() {
           document.getElementById("footer").classList.remove("footer")
           document.getElementById("footer").classList.add("new-footer")
       }
-      else if(newScrollTop>2100 && (screenWidth<=500)){
+      else if(newScrollTop>2250 && (screenWidth<=500)){
          document.getElementById("footer").classList.remove("footer")
          document.getElementById("footer").classList.add("new-footer")
      }

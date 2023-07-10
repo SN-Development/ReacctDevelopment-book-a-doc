@@ -10,7 +10,7 @@ div.window{
 }
 @media screen and (max-width:500px) {
     div.window{
-        height: 70%;
+        height: 65%;
         max-height: 550px;
         width:75%;
         max-width: 330px;

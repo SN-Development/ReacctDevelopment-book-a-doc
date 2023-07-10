@@ -11,9 +11,9 @@ div.window{
 @media screen and (max-width:500px) {
     div.window{
         height: 70%;
-        /* max-height: 550px; */
+        max-height: 550px;
         width:75%;
-        /* max-width: 330px; */
+        max-width: 330px;
         background-color:transparent ;
         box-shadow:none;
     }

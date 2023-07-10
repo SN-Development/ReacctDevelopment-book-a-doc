@@ -8,12 +8,32 @@ div.window{
     align-items: center;
     justify-content: center;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:500px) and (max-height:650px) {
+    div.window{
+        height: 70%;
+        max-height: 550px;
+        width:75%;
+        max-width: 330px;
+        background-color:transparent ;
+        box-shadow:none;
+    }
+}
+@media screen and (max-width:500px) and (min-height:651px) and (max-height:800px) {
     div.window{
         height: 65%;
         max-height: 550px;
         width:75%;
-        max-width: 330px;
+        max-width: 360px;
+        background-color:transparent ;
+        box-shadow:none;
+    }
+}
+@media screen and (max-width:500px) and (min-height:801px) and (max-height:950px) {
+    div.window{
+        height: 68%;
+        max-height: 550px;
+        width:80%;
+        max-width: 360px;
         background-color:transparent ;
         box-shadow:none;
     }

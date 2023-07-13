@@ -54,7 +54,7 @@ div.display-side-bar{
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: linear-gradient(to right,rgb(0, 106, 255),rgb(23, 208, 237));
+        background-image: linear-gradient(to right,#006aff,#17d0ed);
         border-radius:3em;
         border-top-right-radius:0em;
         border-bottom-right-radius:0em;

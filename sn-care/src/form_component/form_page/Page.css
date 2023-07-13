@@ -31,7 +31,7 @@ p.go-home{
 }
 @media screen and (max-width:500px){
     div.page{
-        background-image: linear-gradient(135deg, rgba(0, 94, 255, 0.399),rgba(192, 255, 254, 0.576));
+        background-image: linear-gradient(135deg, rgba(0, 94, 255, 0.633),rgba(192, 255, 254, 0.576));
     }
     p.go-home{
         font-size: 4vw;

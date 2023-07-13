@@ -171,13 +171,16 @@ div.user-instruction{
     div.signup-form{
         height: 100%;
         width:100%;
+        box-shadow:0  0.188em 1.150em rgb(195, 195, 197);
     }
     p.signup-text{
         font-size: 8vw;
+        color:rgb(11, 93, 245);
     }
     
     div.user-input label{
         font-size: 4.5vw;
+        color:rgb(11, 93, 245);
     }
     input.input{
         font-size: 3.5vw;
@@ -199,6 +202,7 @@ div.user-instruction{
     }
     p.create-account{
         font-size: 3.7vw;
+        color:rgb(11, 93, 245);
     }
     .already-account p.text{
         font-size: 3vw;

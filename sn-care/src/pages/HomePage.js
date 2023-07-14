@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import WelcomeSlide from '../component/welcome_slide/WelcomeSlide'
-import Services from '../component/services/ServicesComponent'
-import NavBar from '../component/navbar/NavBar'
-import WhyChoosing from '../component/about/why_choosing/WhyChoosing'
-import AboutUS from '../component/about/about_us/AboutUS'
-import ContactUs from '../component/contactus/ContactUs'
-import Footer from '../component/footer/Footer'
-import Headroom from 'react-headroom'
-
+// import WelcomeSlide from '../component/welcome_slide/WelcomeSlide'
+// import Services from '../component/services/ServicesComponent'
+// import NavBar from '../component/navbar/NavBar'
+// import WhyChoosing from '../component/about/why_choosing/WhyChoosing'
+// import AboutUS from '../component/about/about_us/AboutUS'
+// import ContactUs from '../component/contactus/ContactUs'
+// import Footer from '../component/footer/Footer'
+// import Headroom from 'react-headroom'
+import Loading from '../loading/Loading';
 
 export default function HomePage() {
   const [name,setName] = useState("");
@@ -41,7 +41,7 @@ export default function HomePage() {
   return (
     <div  className='Homepage' style={{margin:'0'}} id='Homepage'>
       <div className='homepage-content' id='homepage-content' style={{overflowX:'visible'}}>
-        <Headroom>
+        {/* <Headroom>
           <NavBar user ={name} isLogged={isLogged} >
           </NavBar>
         </Headroom>
@@ -52,7 +52,8 @@ export default function HomePage() {
          <AboutUS></AboutUS>
          <ContactUs></ContactUs>
          <Footer></Footer>
-        </div>
+        </div> */}
+        <Loading></Loading>
 
         {/* <SideBar isClicked={isMenuBtnclicked}></SideBar> */}
       </div>

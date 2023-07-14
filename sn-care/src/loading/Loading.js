@@ -10,9 +10,9 @@ export default function Loading() {
       <div className='bottom-circle'>
 
       </div>
-      <div className='box-2'>
+      {/* <div className='box-2'>
         
-      </div>
+      </div> */}
     </div>
   )
 }

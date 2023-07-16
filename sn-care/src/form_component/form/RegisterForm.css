@@ -174,16 +174,16 @@ div.user-instruction{
         box-shadow:0  0.188em 1.150em rgb(94, 157, 229);
     }
     p.signup-text{
-        font-size: 8vw;
+        font-size: 8.5vw;
         color:rgb(11, 93, 245);
     }
     
     div.user-input label{
-        font-size: 4.5vw;
+        font-size: 4.85vw;
         color:rgb(11, 93, 245);
     }
     input.input{
-        font-size: 3.5vw;
+        font-size: 4.3vw;
     }
     form.login-btn{
         margin-top: 0%;
@@ -191,7 +191,7 @@ div.user-instruction{
     button.btn{
         width:95%;
         height: 90%;
-        font-size: 4vw;
+        font-size: 4.5vw;
         color: white;
         font-weight: 600;
         letter-spacing:0.1vw;  
@@ -201,7 +201,7 @@ div.user-instruction{
         color:rgb(29, 30, 31);
     }
     p.create-account{
-        font-size: 3.7vw;
+        font-size: 3.9vw;
         color:rgb(11, 93, 245);
     }
     .already-account p.text{

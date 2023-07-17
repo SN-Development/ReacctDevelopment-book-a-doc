@@ -9,6 +9,8 @@ export default function SuccessAlert({work,description,navigation,status,appoint
     //const[isVisible,setIsVisible] = useState(true);
     //to navigate another page
     const navigate = useNavigate()
+    
+    const screenWidth = window.innerWidth
 
     //to change classes of circle and tik time to time
     useEffect(()=>{
@@ -32,10 +34,12 @@ export default function SuccessAlert({work,description,navigation,status,appoint
     
     //to navigate according to the work
     const handleOK = ()=>{
+
       if(work==='Registration'){
          navigate('/loading')
          setTimeout(()=> navigate(navigation),2000)
       }
+
       else if(work==='Appointment Submission'){
         if(status==='success'){
           navigate('/loading')
@@ -46,15 +50,23 @@ export default function SuccessAlert({work,description,navigation,status,appoint
           
         }
       }
+
      else if(work==='User Login'){
-      window.location.reload(true)
+      if(screenWidth<=500){
+        document.getElementById('alert-box').classList.remove('alert-box')
+        document.getElementById('alert-box').classList.add('new-alert-box')
+        setTimeout(()=> window.location.reload(true),400)
+      }
+      else{
+        window.location.reload(true)
+      }
      }
     }
     return (
        <div className='container' id='success-alert'>
 
            {/* begining of the success alert box   */}
-           <div className='alert-box'>
+           <div className='alert-box' id='alert-box'>
                 {status==='success'?(<p className='succes-title'>{work} Successfully !</p>):(<p className='succes-title'>{work} Failed !</p>)}
                 {status==='success'&& work==='Appointment Submission'?(<p className='appointment-no'>Your appointment number is <span style={{color:'rgb(42, 196, 116)'}}>{appointmentNo}</span></p>):(<></>)}
                 {status==='success'?

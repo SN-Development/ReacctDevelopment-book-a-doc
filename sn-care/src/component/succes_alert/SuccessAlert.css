@@ -192,6 +192,35 @@ button.ok-btn{
   div.alert-box{
     width:65vw;
     height: 40vh;
+    animation:moveDownAlert 0.6s linear;
+  }
+  @keyframes moveDownAlert{
+    0%{
+      transform: translateY(-30vh);
+    }
+    100%{
+      transform: translateY(0vh);
+    }
+  }
+  div.new-alert-box{
+    position: relative;
+    width:65vw;
+    height: 40vh;
+    background-color: rgb(247, 249, 250);
+    box-shadow:0  0.188em 1.550em rgb(104, 104, 129);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    border-radius: 0.4em;
+    animation:moveUpAlert 0.6s linear;
+  }
+  @keyframes moveUpAlert{
+    0%{
+      transform: translateY(0vh);
+    }
+    100%{
+      transform: translateY(-70vh);
+    }
   }
   p.succes-title{
     top:5vh;

@@ -9,6 +9,7 @@ export default function AboutUS() {
         const handleScroll = ()=>{
         let newScrollTop = window.pageYOffset; //to get current scrolltop value
         let screenWidth = window.innerWidth
+        let screenHeight = window.innerHeight
 
         if(newScrollTop>1600 && screenWidth>1100)
          {
@@ -26,9 +27,27 @@ export default function AboutUS() {
           document.getElementById("about-us").classList.remove("about-us")
           document.getElementById("about-us").classList.add("new-about-us")
        }
-       else if(newScrollTop>750 && (screenWidth<=500)){
-         document.getElementById("about-us").classList.remove("about-us")
-         document.getElementById("about-us").classList.add("new-about-us")
+       
+      else if(screenWidth<=500){
+
+         if(newScrollTop>730 && (screenHeight>800 && screenHeight<=950)){
+            document.getElementById("about-us").classList.remove("about-us")
+            document.getElementById("about-us").classList.add("new-about-us")
+         }
+         else if(newScrollTop>730 && (screenHeight>650 && screenHeight<=800)){
+            document.getElementById("about-us").classList.remove("about-us")
+            document.getElementById("about-us").classList.add("new-about-us")
+         }
+         else if(newScrollTop>780 && (screenHeight<=650)){
+            document.getElementById("about-us").classList.remove("about-us")
+            document.getElementById("about-us").classList.add("new-about-us")
+         }
+         else{
+          //document.body.style.backgroundColor = "";
+           document.getElementById("about-us").classList.remove("new-about-us");
+           document.getElementById("about-us").classList.add("about-us");
+        }
+
       }
        else{
          //document.body.style.backgroundColor = "";

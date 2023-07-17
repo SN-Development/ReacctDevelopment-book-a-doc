@@ -10,6 +10,8 @@ export default function ContactUs() {
         const handleScroll = ()=>{
         let newScrollTop = window.pageYOffset; //to get current scrolltop value
         let screenWidth = window.innerWidth
+        let screenHeight = window.innerHeight
+
         if(newScrollTop>2200 && screenWidth>1100)
          {
           //document.body.style.backgroundColor = "red"; 
@@ -26,10 +28,27 @@ export default function ContactUs() {
           document.getElementById("contact-us").classList.remove("contact-us")
           document.getElementById("contact-us").classList.add("new-contact-us")
       }
-      else if(newScrollTop>1150 && (screenWidth<=500)){
-         document.getElementById("contact-us").classList.remove("contact-us")
-         document.getElementById("contact-us").classList.add("new-contact-us")
-     }
+      else if(screenWidth<=500){
+
+         if(newScrollTop>1200 && (screenHeight>800 && screenHeight<=950)){
+            document.getElementById("contact-us").classList.remove("contact-us")
+            document.getElementById("contact-us").classList.add("new-contact-us")
+         }
+         else if(newScrollTop>1370 && (screenHeight>650 && screenHeight<=800)){
+            document.getElementById("contact-us").classList.remove("contact-us")
+            document.getElementById("contact-us").classList.add("new-contact-us")
+         }
+         else if(newScrollTop>1100 && (screenHeight<=650)){
+            document.getElementById("contact-us").classList.remove("contact-us")
+            document.getElementById("contact-us").classList.add("new-contact-us")
+         }
+         else{
+          //document.body.style.backgroundColor = "";
+            document.getElementById("contact-us").classList.remove("new-contact-us");
+            document.getElementById("contact-us").classList.add("contact-us");
+        }
+
+      }
       else{
          //document.body.style.backgroundColor = "";
          document.getElementById("contact-us").classList.remove("new-contact-us");

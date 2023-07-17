@@ -8,6 +8,7 @@ export default function WhyChoosing() {
         const handleScroll = ()=>{
         let newScrollTop = window.pageYOffset; //to get current scrolltop value
         let screenWidth = window.innerWidth
+        let screenHeight = window.innerHeight
         //alert(screenWidth)
         if(newScrollTop>800 && screenWidth>1100)
          {
@@ -25,9 +26,24 @@ export default function WhyChoosing() {
           document.getElementById("why-choosing").classList.remove("why-choosing")
           document.getElementById("why-choosing").classList.add("new-why-choosing")
       }
-      else if(newScrollTop>220 && (screenWidth<=500)){
-        document.getElementById("why-choosing").classList.remove("why-choosing")
-        document.getElementById("why-choosing").classList.add("new-why-choosing")
+      else if(screenWidth<=500){
+         if(newScrollTop>400 && (screenHeight>800 && screenHeight<=950)){
+          document.getElementById("why-choosing").classList.remove("why-choosing")
+          document.getElementById("why-choosing").classList.add("new-why-choosing")
+         }
+         else if(newScrollTop>380 && (screenHeight>650 && screenHeight<=800)){
+          document.getElementById("why-choosing").classList.remove("why-choosing")
+          document.getElementById("why-choosing").classList.add("new-why-choosing")
+         }
+         else if(newScrollTop>350 && (screenHeight<=650)){
+          document.getElementById("why-choosing").classList.remove("why-choosing")
+          document.getElementById("why-choosing").classList.add("new-why-choosing")
+         }
+         else{
+          //document.body.style.backgroundColor = "";
+          document.getElementById("why-choosing").classList.remove("new-why-choosing");
+          document.getElementById("why-choosing").classList.add("why-choosing");
+       }
      }
       else{
          //document.body.style.backgroundColor = "";

@@ -13,6 +13,8 @@ export default function Footer() {
         const handleScroll = ()=>{
         let newScrollTop = window.pageYOffset; //to get current scrolltop value
         let screenWidth = window.innerWidth
+        let screenHeight = window.innerHeight
+
         
         if(newScrollTop>3200 && screenWidth>1100)
          {
@@ -30,10 +32,27 @@ export default function Footer() {
           document.getElementById("footer").classList.remove("footer")
           document.getElementById("footer").classList.add("new-footer")
       }
-      else if(newScrollTop>2250 && (screenWidth<=500)){
-         document.getElementById("footer").classList.remove("footer")
-         document.getElementById("footer").classList.add("new-footer")
-     }
+      else if(screenWidth<=500){
+
+         if(newScrollTop>2550 && (screenHeight>800 && screenHeight<=950)){
+            document.getElementById("footer").classList.remove("footer")
+            document.getElementById("footer").classList.add("new-footer")
+         }
+         else if(newScrollTop>2550 && (screenHeight>650 && screenHeight<=800)){
+            document.getElementById("footer").classList.remove("footer")
+            document.getElementById("footer").classList.add("new-footer") 
+         }
+         else if(newScrollTop>2200 && (screenHeight<=650)){
+            document.getElementById("footer").classList.remove("footer")
+            document.getElementById("footer").classList.add("new-footer")
+         }
+         else{
+          //document.body.style.backgroundColor = "";
+           document.getElementById("footer").classList.remove("new-footer");
+           document.getElementById("footer").classList.add("footer");
+        }
+
+      }
        else{
          //document.body.style.backgroundColor = "";
          document.getElementById("footer").classList.remove("new-footer");

@@ -38,6 +38,7 @@ export default function LoginForm(props) {
   const submitFormInputs = (event)=>{
 
     event.preventDefault()
+    let authenticationStatus = '';
     let tempError = error
     tempError = FormValidation(userName,password)
     console.log(tempError)
@@ -68,8 +69,9 @@ export default function LoginForm(props) {
         userName:userName,
         password:password,
       }).then(response=>{
-        //alert("success") 
-            if(response.data.Status === 'Success'){
+        //alert("success")
+        authenticationStatus = response.data.Status 
+            if(authenticationStatus === 'Success'){
               //setUser(userName)
               setUserName('')
               setPassword('')
@@ -87,7 +89,7 @@ export default function LoginForm(props) {
  
     
   }
-  const goToSignUp = ()=>{
+  const goToSignUp = ()=>{ 
     nevigate('/register')
     //setTimeout(()=>nevigate('/register'),2000)
   }

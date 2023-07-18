@@ -55,7 +55,7 @@ export default function SuccessAlert({work,description,navigation,status,appoint
       if(screenWidth<=500){
         document.getElementById('alert-box').classList.remove('alert-box')
         document.getElementById('alert-box').classList.add('new-alert-box')
-        setTimeout(()=> window.location.reload(true),400)
+        setTimeout(()=> window.location.reload(true),300)
       }
       else{
         window.location.reload(true)

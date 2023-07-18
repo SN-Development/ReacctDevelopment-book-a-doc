@@ -17,6 +17,7 @@ div#text-02{
 
 @media screen and (max-width:500px) {
     div.htext{
+      height:52%;
       width:100%;
       font-size:8vw;
       /* background-color: blueviolet;  */

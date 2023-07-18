@@ -36,7 +36,7 @@ div.window{
 @media screen and (max-width:500px) and (min-height:801px) and (max-height:950px) {
     div.window{
         min-height:520px;
-        height:62%;
+        height:65%;
         max-height: 630px;
         min-width:300px;
         width:78%;

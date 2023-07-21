@@ -235,10 +235,10 @@ div#new-dpt-type{
 }
 div#time-slot{
     margin-bottom: 1%;
-    animation: doctorNameMoveDown 0.4s linear 1;
+    animation: timeSlotMoveDown 0.4s linear 1;
     /* background-color: aqua; */
 }
-@keyframes doctorNameMoveDown {
+@keyframes timeSlotMoveDown {
     0%{
         margin-bottom: 25%;
     }
@@ -248,10 +248,10 @@ div#time-slot{
 }
 div#new-time-slot{
     margin-bottom: 25%;
-    animation: doctorNameMoveUp 0.4s linear 1;
+    animation: timeSlotMoveUp 0.4s linear 1;
     /* background-color: aqua; */
 }
-@keyframes  doctorNameMoveUp {
+@keyframes  timeSlotMoveUp {
     0%{
         margin-bottom: 1%;
     }
@@ -308,7 +308,7 @@ div.choose-time{
 }
 .choose-time div.select-time-slot{
     width:25%;
-    margin-left: 10%;
+    margin-left:10%;
     margin-top: 7%;
     /* margin-top: 7%;
     margin-left: 0%;
@@ -391,7 +391,7 @@ p#p-time{
     border-radius: 1.5em;
     }
     div.form-heading{
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
     .appointment-form::-webkit-scrollbar{
         width:5px;
@@ -410,10 +410,104 @@ p#p-time{
         
     }
     label{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     .patient-id div.select{
-        width:45%;
-        
+        width:45%;        
     }
+
+    @keyframes idTypeMoveDown {
+        0%{
+            margin-bottom: 30%;
+        }
+        100%{
+            margin-bottom: 1%;
+        }
+    }
+
+    div#new-id-type{
+        margin-bottom:30%;
+        animation: idTypeMoveUp 0.4s linear 1;
+        /* background-color: aqua; */
+    }
+    @keyframes idTypeMoveUp {
+        0%{
+            margin-bottom: 1%;
+        }
+        100%{
+            margin-bottom:30%;
+        }
+    }
+
+    @keyframes dptTypeMoveDown {
+        0%{
+            margin-bottom: 35%;
+        }
+        100%{
+            margin-bottom: 1%;
+        }
+    }
+    div#new-dpt-type{
+        margin-bottom:35%;
+    }
+    @keyframes dptTypeMoveUp {
+        0%{
+            margin-bottom: 1%;
+        }
+        100%{
+            margin-bottom:35%;
+        }
+    }
+    
+    @keyframes timeSlotMoveDown {
+        0%{
+            margin-bottom: 35%;
+        }
+        100%{
+            margin-bottom: 1%;
+        }
+    }
+    div#new-time-slot{
+        margin-bottom:35%;
+    }
+    @keyframes timeSlotMoveUp {
+        0%{
+            margin-bottom: 1%;
+        }
+        100%{
+            margin-bottom:35%;
+        }
+    }
+
+    div.paitent-input-date-time{
+        margin-top: 5%;
+    }
+    div.choose-date{
+        width: 40%;
+    }
+    .choose-date input[type="date"]{
+        width:100%;
+        padding: 8% 4%;
+    }
+    div.choose-time{
+        margin-left: 15%;
+        width: 60%;
+    }
+    @media screen and (max-height:650px){
+        div.choose-time{
+            margin-top:54%;
+        }
+    }
+    @media screen and (min-height:651px) and (max-height:800px){
+        div.choose-time{
+            margin-top:61.5%;
+        }
+    }
+    @media screen and (min-height:801px) and (max-height:950px){
+        div.choose-time{
+            margin-top:55.5%;
+            margin-left: 20%;
+        }
+    }
+   
 }

@@ -188,7 +188,7 @@ const goFromAppointmentToHome = ()=>{
                    <label>Patinet ID Number</label>
                    <div className='patient-id' >
                      <div className='select' >
-                       <SelectedBox setId={setIdType} newId='new-id-type' oldId ='id-type'value={setPatientIdType} list={idTypeList} selectType='ID TYPE' height='25vh' width={window.screen.width>500?'10vw':'25vw'}></SelectedBox>
+                       <SelectedBox setId={setIdType} newId='new-id-type' oldId ='id-type'value={setPatientIdType} list={idTypeList} selectType='ID TYPE' height='25vh' width={window.innerWidth>500?'10vw':'25vw'}></SelectedBox>
                      </div>
                      <input type='text' value={patientIdNo} onChange={(e)=>{
                        setPatientIdNo(e.target.value)
@@ -203,40 +203,40 @@ const goFromAppointmentToHome = ()=>{
                    <div className='choose-department' >
                    
                     <div className='select' >
-                       <SelectedBox  setId={setDptType} newId='new-dpt-type' oldId ='dpt-type' value={setDepartment} list={departmentList} selectType='Department' height={window.screen.width>500?'25vh':'20vh'} width={window.screen.width>500?'10vw':'25vw'}></SelectedBox>
+                       <SelectedBox  setId={setDptType} newId='new-dpt-type' oldId ='dpt-type' value={setDepartment} list={departmentList} selectType='Department' height={window.innerHeight>500?'25vh':'20vh'} width={window.innerWidth>500?'10vw':'25vw'}></SelectedBox>
                     </div>
                     {
                        department === 'Neurology'? 
                        (<div className='select' >
-                          <SelectedBox setId={setDptType} newId='new-dpt-type' oldId ='dpt-type' value={setDoctor} list={neurologyList} selectType='Doctor' height={window.screen.width>500?'25vh':'20vh'} width={window.screen.width>500?'10vw':'25vw'}></SelectedBox>
+                          <SelectedBox setId={setDptType} newId='new-dpt-type' oldId ='dpt-type' value={setDoctor} list={neurologyList} selectType='Doctor' height={window.innerHeight>500?'25vh':'20vh'} width={window.innerWidth>500?'10vw':'25vw'}></SelectedBox>
                       </div>)
                       :(<></>)
                     }
                     {
                        department === 'Dentist'? 
                        (<div className='select' >
-                          <SelectedBox setId={setDptType} newId='new-dpt-type' oldId ='dpt-type' value={setDoctor} list={dentistList} selectType='Doctor' height={window.screen.width>500?'25vh':'20vh'} width={window.screen.width>500?'10vw':'25vw'}></SelectedBox>
+                          <SelectedBox setId={setDptType} newId='new-dpt-type' oldId ='dpt-type' value={setDoctor} list={dentistList} selectType='Doctor' height={window.innerHeight>500?'25vh':'20vh'} width={window.innerWidth>500?'10vw':'25vw'}></SelectedBox>
                       </div>)
                       :(<></>)
                     }
                     {
                        department === 'Ophthalmology'? 
                        (<div className='select' >
-                          <SelectedBox setId={setDptType} newId='new-dpt-type' oldId ='dpt-type' value={setDoctor} list={ophthalmologyList} selectType='Doctor' height={window.screen.width>500?'25vh':'20vh'} width={window.screen.width>500?'10vw':'25vw'}></SelectedBox>
+                          <SelectedBox setId={setDptType} newId='new-dpt-type' oldId ='dpt-type' value={setDoctor} list={ophthalmologyList} selectType='Doctor' height={window.innerHeight>500?'25vh':'20vh'} width={window.innerWidth>500?'10vw':'25vw'}></SelectedBox>
                       </div>)
                       :(<></>)
                     }
                     {
                        department === 'Cardiology'? 
                        (<div className='select' >
-                          <SelectedBox setId={setDptType} newId='new-dpt-type' oldId ='dpt-type' value={setDoctor} list={cardiologyList} selectType='Doctor' height={window.screen.width>500?'25vh':'20vh'} width={window.screen.width>500?'10vw':'25vw'}></SelectedBox>
+                          <SelectedBox setId={setDptType} newId='new-dpt-type' oldId ='dpt-type' value={setDoctor} list={cardiologyList} selectType='Doctor' height={window.innerHeight>500?'25vh':'20vh'} width={window.innerWidth>500?'10vw':'25vw'}></SelectedBox>
                       </div>)
                       :(<></>)
                     }
                     {
                        department === 'Surgery'? 
                        (<div className='select' >
-                          <SelectedBox setId={setDptType} newId='new-dpt-type' oldId ='dpt-type' value={setDoctor} list={surgeryList} selectType='Doctor' height={window.screen.width>500?'25vh':'20vh'} width={window.screen.width>500?'10vw':'25vw'}></SelectedBox>
+                          <SelectedBox setId={setDptType} newId='new-dpt-type' oldId ='dpt-type' value={setDoctor} list={surgeryList} selectType='Doctor' height={window.innerHeight>500?'25vh':'20vh'} width={window.innerWidth>500?'10vw':'25vw'}></SelectedBox>
                       </div>)
                       :(<></>)
                     }
@@ -256,9 +256,9 @@ const goFromAppointmentToHome = ()=>{
   
                    </div>
                    <div className='choose-time' >
-                      <label>Chooce Time Slot</label><br></br>
+                      <label style={{marginLeft:'10%'}}>Chooce Time Slot</label><br></br>
                       <div className='select-time-slot'>
-                       <SelectedBox  setId={setTimeSlotType} newId='new-time-slot' oldId ='time-slot' value={setTimeSlot} list={timeSlotList} selectType='Time Slot' height='25vh' width='10vw'></SelectedBox>
+                       <SelectedBox  setId={setTimeSlotType} newId='new-time-slot' oldId ='time-slot' value={setTimeSlot} list={timeSlotList} selectType='Time Slot' height={window.innerHeight>500?'25vh':'18vh'} width={window.innerWidth>500?'10vw':'25vw'} ></SelectedBox>
                       </div>
                    </div>
                  

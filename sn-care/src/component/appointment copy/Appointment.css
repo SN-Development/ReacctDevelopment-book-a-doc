@@ -385,12 +385,16 @@ p#p-time{
     left:60.5%;
 }
 @media screen and (max-width:500px){
+    div.appointment-container{
+        background-image: linear-gradient(135deg, rgba(0, 0, 255, 0.552),rgb(192, 255, 254));
+    }
     div.appointment-to-home{
         font-size:4vw;
     }
     div.appointment-box{
+        min-width:300px;
         width:85%;
-        min-height:400px;
+        min-height:500px;
         max-height: 650px;
         border-radius: 1.5em;
     }
@@ -426,6 +430,7 @@ p#p-time{
         
     }
     label{
+        width: 100%;
         font-size: 3.5vw;
     }
     .patient-id div.select{
@@ -502,20 +507,23 @@ p#p-time{
     }
 
     div.paitent-input-date-time{
-        margin-top:5%;
+        width:100%;
+        margin-top:10%;
+        margin-left:20%;
     }
     div.choose-date{
         width: 40%;
     }
     .choose-date input[type="date"]{
-        width:100%;
+        width:80%;
         /* padding: 8% 4%; */
     }
     div.choose-time{
-        margin-left: 15%;
+        margin-left:5%;
         width: 60%;
+        /* background-color: aqua; */
     }
-    
+
     .paitent-input input[type="submit"]{
         transform:scale(1);
         padding:3% 0%;

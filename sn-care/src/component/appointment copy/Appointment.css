@@ -386,7 +386,7 @@ p#p-time{
 }
 @media screen and (max-width:500px){
     div.appointment-container{
-        background-image: linear-gradient(135deg, rgba(0, 0, 255, 0.552),rgb(192, 255, 254));
+        background-image: linear-gradient(135deg, rgba(0, 94, 255, 0.919),rgba(192, 255, 254, 0.576));
     }
     div.appointment-to-home{
         font-size:4vw;

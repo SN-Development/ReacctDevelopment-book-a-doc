@@ -85,6 +85,12 @@ export default function NavBar({user,isLogged}) {
                     </ul>
                 </div>
                 
+               {isLogged && window.innerWidth<=500?
+                 (<div className='user'>
+                    {user[0]}
+                    {/* <User logged={isLogged}></User> */}
+                 </div> ):(<></>)
+              }
 
             </div>
             <div>

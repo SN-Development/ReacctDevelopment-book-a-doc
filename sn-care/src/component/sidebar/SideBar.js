@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './SideBar.css'
 import logo from './images/logo (2).png'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
+import axios from 'axios'
 
 export default function SideBar({isClicked}) {
   const [sideBarStyle, setSideBarStyle] = useState('hide-side-bar')
@@ -16,6 +17,19 @@ export default function SideBar({isClicked}) {
      //setSideBarStyle('hide-side-bar')
      //document.getElementById('home-content').style.opacity = '1'
   }
+  
+  const [isUserLogged,setIsUserLogged] = useState(false)
+  const navigate = useNavigate();
+  const handleLogOut = ()=>{
+    axios.get('api/loginout').then((response)=>{
+      let status = response.data.Status
+      if(status==='Success'){
+         navigate('/loading')
+         setTimeout(()=>navigate('/'),2000)
+         //setIsUserLogged(false)
+      }
+    })
+  }
 
   useEffect(()=>{
     if(isClicked){
@@ -29,6 +43,15 @@ export default function SideBar({isClicked}) {
         document.getElementById('home-content').style.opacity = '1'
         //alert("false")
     }
+    axios.get('api/home').then((response)=>{
+      let status = response.data.Status
+      if(status==='Success'){
+         setIsUserLogged(true)
+      }
+      else{
+
+      }
+    })
   },[isClicked])
   return (
     <div className={sideBarStyle} id='side-bar'>
@@ -60,7 +83,9 @@ export default function SideBar({isClicked}) {
 
             <li className={isNavLinkNumber === 5 && currentPath ==='/' ?'slide-bar-link-active':'slide-bar-link'} 
               onClick={()=>handleNavItem(5)}>
-              <Link className={isNavLinkNumber === 5 && currentPath ==='/'?'s-b-link-active':'s-b-link'} to='/login'>Login</Link>
+              {!isUserLogged?
+                ( <Link className={isNavLinkNumber === 5 && currentPath ==='/'?'s-b-link-active':'s-b-link'} to='/login'>Login</Link>)
+                :( <Link className={isNavLinkNumber === 5 && currentPath ==='/'?'s-b-link-active':'s-b-link'} onClick={handleLogOut}>Logout</Link>)}
             </li>
 
          </ul>

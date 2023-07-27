@@ -1,0 +1,180 @@
+div.department-conter{
+    width:100vw;
+    height:auto;
+    /* background-color:aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.department-slider{
+   width: 100vw;
+   height:60vh;
+   background-color: aquamarine;
+   background-image:url('./images/dental-dpt.jpg');
+   background-repeat:no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+div.departments{
+    width: 90vw;
+    height: 40vh;
+    /* background-color: bisque; */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.departments p.departments-heading{
+    font-family:'Montserrat';
+    font-size:42px;
+    font-weight:bolder;
+    text-transform: capitalize;
+    word-spacing: 1vw;
+}
+
+div.d-appointment{
+    position:absolute;
+    top:220vh;
+    width:45vw;
+    height:80vh;
+    background-color:transparent;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    visibility:hidden;
+    /* overflow-y:scroll; */
+}
+
+div.p-input-form{
+    position:relative;
+    height:85%;
+    width:75%;
+    padding:5% 0%;
+    /* background-color:#167EF9; */
+    border:1px solid #167EF9;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    /* justify-content:space-around; */
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+
+div.p-input{
+    position:relative;
+    min-height:17%;
+    height:17%;
+    width:80%;
+    margin-bottom:5%;
+    /* background-color:#167EF9; */
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:space-around;
+}
+
+label.p-input-lable{
+  height:20%;  
+  margin-bottom:5%;
+}
+
+div.p-type{
+    width:85%;
+    height: 60%;
+    /* background-color:aliceblue; */
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+div.p-type-input{
+    width:45%;
+    height: 80%;
+    /* background-color:aqua; */
+    display:flex;
+    align-items:center;
+    border:1px solid #167EF9;
+}
+
+label.p-type-lable{
+    margin-left:10%;
+}
+
+input.p-input-input{
+    width:100%;
+    height:50%;
+    background-color:#f6f6f6;
+    border:1px solid #167EF9;
+}
+
+div.p-id{
+    width:100%;
+    height:80%;
+    /* background-color: #b64848; */
+    display:flex;
+    justify-content:space-between;
+}
+
+div.set-id{
+    width:10%;
+    /* background-color:aquamarine; */
+}
+
+input.id-number-input{
+    width:50%;
+    height:60%;
+    background-color:#f6f6f6;
+    border:1px solid #167EF9;
+}
+
+div.selected-doctor{
+   width:100%;
+   height:100%;
+   /* background-color:#167EF9; */
+   display:flex;
+   align-items:center;
+   justify-content:space-between;
+}
+
+div.s-doctor{
+   width:40%;
+   height:100%;
+   border:1px solid #167EF9;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+}
+
+div#p-id-type{
+    margin-bottom: 5%;
+    animation: idTypeMoveDown 0.6s linear 1;
+    /* display:flex;
+    justify-content:space-between; */
+    /* background-color: aqua; */
+}
+@keyframes idTypeMoveDown {
+    0%{
+        margin-bottom: 35%;
+    }
+    100%{
+        margin-bottom: 5%;
+    }
+}
+div#new-p-id-type{
+    margin-bottom: 35%;
+    animation: idTypeMoveUp 0.3s linear 1;
+    /* display: flex;
+    justify-content: space-between; */
+    /* background-color: aqua; */
+}
+@keyframes idTypeMoveUp {
+    0%{
+        margin-bottom: 5%;
+    }
+    100%{
+        margin-bottom: 35%;
+    }
+}

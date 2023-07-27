@@ -185,10 +185,10 @@ const goFromAppointmentToHome = ()=>{
                  </div>
 
                  <div className='paitent-input' id={idType} >
-                   <label>Patinet ID Number</label>
+                   <label>Patinet ID Number</label> 
                    <div className='patient-id' >
                      <div className='select' >
-                       <SelectedBox setId={setIdType} newId='new-id-type' oldId ='id-type'value={setPatientIdType} list={idTypeList} selectType='ID TYPE' height='25vh' width={window.innerWidth>500?'10vw':'25vw'}></SelectedBox>
+                       <SelectedBox setId={setIdType} newId='new-id-type' oldId ='id-type' value={setPatientIdType} list={idTypeList} selectType='ID TYPE' height='25vh' width={window.innerWidth>500?'10vw':'25vw'}></SelectedBox>
                      </div>
                      <input type='text' value={patientIdNo} onChange={(e)=>{
                        setPatientIdNo(e.target.value)

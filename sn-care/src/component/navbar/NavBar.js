@@ -88,14 +88,14 @@ export default function NavBar({user,isLogged}) {
                {isLogged && window.innerWidth<=500?
                  (<div className='user'>
                     {user[0]}
-                    {/* <User logged={isLogged}></User> */}
+                   
                  </div> ):(<></>)
               }
 
             </div>
-            <div>
+            {/* <div>
               <SideBar isClicked={isClickedMenuBar}></SideBar>
-            </div>
+            </div> */}
        </div>
     
   )

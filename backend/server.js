@@ -66,7 +66,7 @@ app.use(cookies())
 // }))
 
 
-const verifyUser = (req,res,next)=>{
+const verifyUser = (req,res,next)=>{ 
     const token = req.cookies.token
     if(!token){
       return res.json({Message:"Please Provide cookie"})
@@ -220,26 +220,26 @@ app.post('/api/appointment',(req,res)=>{
     })
 })
 
-// app.get('/api/appointmentID',(req,res)=>{
-    
-//     const doctor = req.body.doctor
-//     const date = req.body.date
-//     const timeSlot = req.body.timeSlot
-//     const sqlGetId = "SELECT ID FROM Appointment WHERE Doctor = 'Shashindu';"
-//     db.query(sqlGetId,(err,result3)=>{
-//         if(err){
-//             console.log(err)
-//         }
-//         else{
-
-//             console.log(result3[0].ID)
-//             //return res.json({Result:result3})
-//         }
-//     })
-// })
-
 app.get('/api/gotoappointment',verifyUser,(req,res)=>{
   return res.json({Status:'Success',user:req.name})
+})
+
+
+app.get('/api/doctor',(req,res)=>{
+
+    const sqlGetDoctor = 'SELECT * FROM Doctor'
+
+    db.query(sqlGetDoctor,(err,result)=>{
+        if(err){
+            console.log(err)
+            return res.json(err)
+        }
+        else{
+            console.log(result)
+            return res.json(result)
+        }
+    })
+
 })
 
 app.listen('3008',()=>{

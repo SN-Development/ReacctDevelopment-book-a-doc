@@ -8,6 +8,7 @@ import AboutUS from '../component/about/about_us/AboutUS'
 import ContactUs from '../component/contactus/ContactUs'
 import Footer from '../component/footer/Footer'
 import Headroom from 'react-headroom'
+import DepartmentContent from '../component/department_content/DepartmentContent'
 //import Loading from '../loading/Loading';
 
 export default function HomePage() {
@@ -42,9 +43,10 @@ export default function HomePage() {
     <div  className='Homepage' style={{margin:'0'}} id='Homepage'>
       <div className='homepage-content' id='homepage-content' style={{overflowX:'visible'}}>
         <Headroom>
-          <NavBar user ={name} isLogged={isLogged} >
+          <NavBar user ={name} isLogged={false} >
           </NavBar>
         </Headroom>
+        {/* <DepartmentContent></DepartmentContent> */}
         <div id='home-content'>
          <WelcomeSlide></WelcomeSlide>
          <Services></Services>

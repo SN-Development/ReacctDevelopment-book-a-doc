@@ -8,6 +8,8 @@ import About from './pages/About';
 import Loading from './loading/Loading';
 import SuccessAlert from './component/succes_alert/SuccessAlert';
 import Appoiintment from './component/appointment copy/Appoiintment';
+import DepartmentContent from './component/department_content/DepartmentContent';
+import DepartmentPage from './pages/DepartmentPage';
 
 
 
@@ -18,6 +20,7 @@ function App() {
     <div className="App" id='App'>
       <Routes>
         <Route path='/' element={<HomePage></HomePage>}></Route>
+        <Route path='/department' element={<DepartmentPage></DepartmentPage>}></Route>
         <Route path='/register' element={<RegisterPage></RegisterPage>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/about' element={<About></About>}></Route>

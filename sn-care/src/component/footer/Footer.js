@@ -6,16 +6,20 @@ import twiterImgIcon from './images/Twiter.png'
 import instaImgIcon from './images/Insta.png'
 import fbImgIcon from './images/Fb.png'
 import logoImg from './images/logo (2).png'
+import { useLocation } from 'react-router-dom'
 
 export default function Footer() {
+
     const width = window.innerWidth
+    const location = useLocation()
+
     useEffect(()=>{
         const handleScroll = ()=>{
         let newScrollTop = window.pageYOffset; //to get current scrolltop value
         let screenWidth = window.innerWidth
         let screenHeight = window.innerHeight
 
-        
+      if(location.pathname ==='/'){
         if(newScrollTop>3200 && screenWidth>1100)
          {
           //document.body.style.backgroundColor = "red"; 
@@ -59,6 +63,10 @@ export default function Footer() {
          document.getElementById("footer").classList.add("footer");
       }
     }
+    else{
+      document.getElementById("footer").style.top = '15vh'
+    }
+   }
         window.addEventListener("scroll",handleScroll);
         return()=> window.removeEventListener("scroll",handleScroll);
     } 

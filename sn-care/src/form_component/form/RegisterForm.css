@@ -213,13 +213,21 @@ div.user-instruction{
         padding:2%;
     }
     div.user-instruction{
-        background-color:transparent;
+        /* background-color:transparent; */
         border: none;
         font-size:3.5vw;
+        text-align: justify;
         margin-top:2%;
-        width:100%;
+        width:80%;
         justify-content: center;
-        color:rgba(228, 144, 144, 0.996);
+        background-color: rgba(228, 144, 144, 0.681);
+        color:rgb(176, 22, 22);
+    }
+    #password-insturction{
+        margin-top: 8%;
+    }
+    #confirm-password-insturction{
+        margin-top: 13%;
     }
     .invalid-user-popup{
         top:0%;

@@ -7,19 +7,19 @@ const mysql  = require('mysql')
 const jwt    = require('jsonwebtoken')
 
 const app  = express()
-const db   = mysql.createPool({
-    host:'localhost',
-    user:'root',
-    password:'',
-    database:'book_a_doc'
-})
-
 // const db   = mysql.createPool({
-//     host:'bypopnusemkxar0vqkti-mysql.services.clever-cloud.com',
-//     user:'uwnq6nr5jl5gb74v',
-//     password:'EUcdyJcxXENLz5eNVVSi',
-//     database:'bypopnusemkxar0vqkti'
+//     host:'localhost',
+//     user:'root',
+//     password:'',
+//     database:'book_a_doc'
 // })
+
+const db   = mysql.createPool({
+    host:'bypopnusemkxar0vqkti-mysql.services.clever-cloud.com',
+    user:'uwnq6nr5jl5gb74v',
+    password:'EUcdyJcxXENLz5eNVVSi',
+    database:'bypopnusemkxar0vqkti'
+})
 
 app.use(express.static('build'))
 
@@ -45,11 +45,11 @@ app.use(express.static('build'))
 //     methods:["GET","POST"],
 //     credentials:true
 // }))
-app.use(cors({
-    origin:['https://sn-book-a-doc-01.onrender.com'],
-    methods:["GET","POST"],
-    credentials:true
-}))
+// app.use(cors({
+//     origin:['https://sn-book-a-doc-01.onrender.com'],
+//     methods:["GET","POST"],
+//     credentials:true
+// }))
 
 app.use(express.json())
 app.use(bodyParser.json())

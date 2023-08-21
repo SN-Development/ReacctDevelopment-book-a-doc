@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1a8b0a21.css",
+    "main.js": "/static/js/main.3e63be2a.js",
+    "static/js/787.0b32c93a.chunk.js": "/static/js/787.0b32c93a.chunk.js",
+    "static/media/about_image.png": "/static/media/about_image.5dcdfbfe6639d2ef8753.png",
+    "static/media/4.png": "/static/media/4.cc6873f1bbbe31d9f4ed.png",
+    "static/media/d1.jpg": "/static/media/d1.e997bf037bfc017e92ff.jpg",
+    "static/media/dental-dpt.jpg": "/static/media/dental-dpt.ac5b80fa171f6c0a3279.jpg",
+    "static/media/logo.png": "/static/media/logo.5cb304c4fb0c931316d6.png",
+    "static/media/24Service.png": "/static/media/24Service.0d9d33567250cce83089.png",
+    "static/media/d2.png": "/static/media/d2.bfe1b83ea4b91f7fb324.png",
+    "static/media/1.webp": "/static/media/1.64dd164af60c47f303f0.webp",
+    "static/media/Prescription (1).png": "/static/media/Prescription (1).b0171666a3f940872076.png",
+    "static/media/blue-online_booking (2).png": "/static/media/blue-online_booking (2).da68f178ab4e0d1acf08.png",
+    "static/media/logo (2).png": "/static/media/logo (2).3f96bfc90893a72a3e87.png",
+    "index.html": "/index.html",
+    "main.1a8b0a21.css.map": "/static/css/main.1a8b0a21.css.map",
+    "main.3e63be2a.js.map": "/static/js/main.3e63be2a.js.map",
+    "787.0b32c93a.chunk.js.map": "/static/js/787.0b32c93a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a8b0a21.css",
+    "static/js/main.3e63be2a.js"
+  ]
+}

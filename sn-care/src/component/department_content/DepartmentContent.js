@@ -7,6 +7,7 @@ import DepartmentInfo from './departments_info/DepartmentInfo'
 import Doctors from './department_doctor/Doctors'
 import axios from 'axios'
 import DepartmentAppointment from './department_Appointment/DepartmentAppointment'
+import Carousel from './department_carousel/Carousel'
 
 export default function DepartmentContent() {
   
@@ -59,9 +60,10 @@ export default function DepartmentContent() {
       {/* {dptFunction[0].FunctionID} */}
       {/* {doctorId} */}
       <div className='dpt-content' id='dpt-content'>
-        <div className='department-slider'>
+        {/* <div className='department-slider'>
 
-        </div>
+        </div> */}
+        <Carousel></Carousel>
         <Departments 
            toggleNumber={toggleNumber} setToggleNumber={setToggleNumber} 
         >

@@ -6,7 +6,7 @@ import DepartmentContent from '../component/department_content/DepartmentContent
 
 export default function DepartmentPage() {
   return (
-    <div>
+    <div id='department-page'>
       <Headroom>
         <NavBar></NavBar>
       </Headroom>

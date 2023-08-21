@@ -2,8 +2,10 @@ import React, { useEffect } from 'react'
 import './AboutUS.css'
 import treatIcon from '../images/treat.png'
 import serviceIcon from '../images/service.png'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function AboutUS() {
+
 
     useEffect(()=>{
         const handleScroll = ()=>{

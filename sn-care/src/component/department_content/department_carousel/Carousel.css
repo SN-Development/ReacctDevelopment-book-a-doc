@@ -1,0 +1,29 @@
+.coursal{
+    margin: 0 auto;
+    width: 100vw;
+    height:60vh;
+    /* background-color:lightblue; */
+    /* display:flex;
+    align-items: center;
+    justify-content: center; */
+}
+.courasal-wrapper{
+    position: absolute;
+    height:60%;
+    width:100%;
+    /* background-color: azure; */
+    pointer-events: none;
+    opacity:0;
+    transform: scale(0.8);
+    transition: 1s ease-in-out;
+}
+.courasal-wrapper-active{
+    opacity:1;
+    pointer-events: visible;
+    transform: scale(1); 
+    background-color: rgba(0, 0, 0, 0.907);
+}
+.coursal_card{
+    width:100%;
+    height:100%;
+}

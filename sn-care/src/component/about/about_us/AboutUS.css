@@ -45,6 +45,7 @@ div.detail-box{
     justify-content: space-around;
     
 }
+
 div.about-us-title{
     text-align: center;
     text-transform: uppercase;
@@ -54,28 +55,33 @@ div.about-us-title{
     word-spacing: 0.5vw;
     letter-spacing: 0.2vw;
 }
+
 div.about-title-text{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size:2vw;
     color: rgba(28, 28, 28, 1);
 }
+
 div.about-content-text{
     text-align: justify;
     font-family: 'Lato', sans-serif;
     font-size: 1vw;
     color:rgba(84, 84, 84, 1);
 }
+
 div.about-quality{
     width:100%;
     display: flex;
     justify-content: space-between;
 }
+
 div.quality-type{
     width:50%;
     display: flex;
     justify-content: space-between;
 }
+
 p.quality-type-text{
     margin-left: 10%;
     font-family: 'Lato', sans-serif;

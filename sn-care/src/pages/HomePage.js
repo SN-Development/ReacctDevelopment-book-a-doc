@@ -46,7 +46,7 @@ export default function HomePage() {
           <NavBar user ={name} isLogged={false} >
           </NavBar>
         </Headroom>
-        {/* <DepartmentContent></DepartmentContent> */}
+
         <div id='home-content'>
          <WelcomeSlide></WelcomeSlide>
          <Services></Services>
@@ -55,11 +55,9 @@ export default function HomePage() {
          <ContactUs></ContactUs>
          <Footer></Footer>
         </div>
-        {/* <Loading></Loading> */}
-
-        {/* <SideBar isClicked={isMenuBtnclicked}></SideBar> */}
+       
       </div>
-      {/* <Appoiintment></Appoiintment> */}
+     
     </div>
   )
 }

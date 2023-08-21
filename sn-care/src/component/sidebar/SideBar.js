@@ -35,12 +35,12 @@ export default function SideBar({isClicked}) {
     if(isClicked){
         setSideBarStyle('display-side-bar')
         //document.getElementById('home-content').style.backgroundColor = 'black'
-        document.getElementById('home-content').style.opacity = '0.5'
+        //document.getElementById('home-content').style.opacity = '0.5'
         //alert("true")
     }
     else{
         setSideBarStyle('hide-side-bar')
-        document.getElementById('home-content').style.opacity = '1'
+        //document.getElementById('home-content').style.opacity = '1'
         //alert("false")
     }
     axios.get('api/home').then((response)=>{

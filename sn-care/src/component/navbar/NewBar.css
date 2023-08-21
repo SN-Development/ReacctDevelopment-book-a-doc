@@ -7,6 +7,7 @@ div.nav-bar{
     align-items: center;
     justify-content: space-between;
 }
+
 div.logo{
     height: 100%;
     min-width:150px;
@@ -17,6 +18,7 @@ div.logo{
     align-items: center;
     justify-content: center;
 }
+
 div.menu-bar{
     position: absolute;
     width:8vw;
@@ -27,11 +29,13 @@ div.menu-bar{
     display: none;
     cursor: pointer;
 }
+
 img.logo-img{
     margin:auto;
     min-width:125px;
     width: 60%;
 }
+
 div.nav-componenets{
     height: 100%;
     width:65%;
@@ -41,6 +45,7 @@ div.nav-componenets{
     align-items: center;
     justify-content: right;
 }
+
 ul.nav-ul{
     min-width:500px;
     width:70%;
@@ -50,40 +55,48 @@ ul.nav-ul{
     list-style: none;
     text-align: left;
     /* background-color: blue; */
-}    
+}  
+
 li.nav-list{
     padding: 0% 4%;
 }
+
 div.nav-link{
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.3vw;
     font-family: 'Roboto', sans-serif;
     font-style: bold;
     font-weight: 1000;
     text-transform: uppercase;
 }
+
 div.nav-link:hover{
     cursor: pointer;
     border-bottom:3px solid blueviolet;
     color:rgba(0, 0, 255, 0.757);
 }
+
 .link{
     text-decoration: none;
 }
+
 .link:active{
     color:inherit;
 }
-#nav-link-active{
+
+.nav-link-active{
     color:blue;
 }
+
 div.dpt{
-    
     transition: 2s;
     transform:scale(0)
 }
+
 #department-link:hover .dpt{
     transform: scale(1);
 }
+
 .user{
     position: relative;
     top:0vh;
@@ -102,9 +115,11 @@ div.dpt{
     border-radius: 50%;
     cursor:pointer;
 }
+
 .user:hover .sign-out{
     transform: scale(1);
 }
+
 .sign-out{
     position: absolute;
     top:8vh;
@@ -115,6 +130,29 @@ div.dpt{
     transition: 1.5s;
     transform: scale(0);
 }
+
+div.go-up{
+    position:fixed;
+    right:5vw;
+    top:90vh;
+    width:3.5vw;
+    height:3.5vw;
+    font-size:1.5vw;
+    background-color:#167EF9;
+    color:#F3ECEC;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transform:scale(0.8);
+    transition:0.2s ease-in-out;
+}
+
+div.go-up:hover{
+    transform: scale(1);
+}
+
 @media screen and (max-width:500px){
     div.nav-bar{
       min-height: 6.5vh;
@@ -137,6 +175,9 @@ div.dpt{
         text-align:center;
         padding: 1.2%;
         background-color:rgb(11, 93, 245);
+    }
+    div.go-up{
+        display:none;
     }
 }
 @media screen and (min-width:501px) and (max-width:800px) {

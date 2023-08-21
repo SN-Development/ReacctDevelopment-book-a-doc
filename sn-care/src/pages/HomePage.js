@@ -19,7 +19,7 @@ export default function HomePage() {
 
   axios.defaults.withCredentials = true;
   useEffect(()=>{
-      axios.get('/api/home').then((response)=>{
+      axios.get('http://localhost:3008/api/home').then((response)=>{
          
         //  if(response.data.valid){
         //       setName(response.data.user)

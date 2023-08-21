@@ -6,11 +6,12 @@ import Departments from './departments/Departments'
 import DepartmentInfo from './departments_info/DepartmentInfo'
 import Doctors from './department_doctor/Doctors'
 import axios from 'axios'
+import DepartmentAppointment from './department_Appointment/DepartmentAppointment'
 
 export default function DepartmentContent() {
   
   const [toggleNumber,setToggleNumber] = useState(1)
-  const [isTabClicked,setIsTabClicked] = useState(false)
+
 //   const handleToggel = (index)=> {
 //      setToggleNumber(index)
 //   }
@@ -19,85 +20,60 @@ export default function DepartmentContent() {
   //  document.getElementById('d-appointment').style.visibility = 'visible';
   // }
 
-  const handleAppointment = ()=>{
-    document.getElementById('d-appointment').style.visibility = 'hidden';
-  }
+  
+  const [doctorList,setDoctorList] = useState([])
+  const [doctorId,setDoctorId] = useState('')
+  //console.log(doctorId)
 
-  const idTypeList = ["NIC","Passport","Licence"]
-  const [idType,setIdType] = useState('p-id-type')
-
+  const [department,setDepartment] = useState([])
+  const [dptFunction,setDptFunction] = useState([])
+  
+  axios.defaults.withCredentials = true;
   useEffect(()=>{
-     axios.get('/api/doctor').then((response)=>{
-       
-     })
-  },[])
+    axios.post('http://localhost:3008/api/doctor',{toggle:toggleNumber}).then((response)=>{
+      let doctorList = []
+      doctorList = response.data.Result
+      setDoctorList(doctorList)
+    })
+
+    axios.post('http://localhost:3008/api/department',{toggle:toggleNumber}).then((response)=>{
+      let departmentValue = []
+      let dptFunction = []
+
+      departmentValue = response.data.Result
+      //console.log(departmentValue[0].DepartmentID)
+      setDepartment(departmentValue)
+      //console.log(department[0].DepartmentID)
+      
+      dptFunction = response.data.rsl
+      setDptFunction([...dptFunction,response.data.rsl])
+    })
+
+  },[toggleNumber])
 
   return (
-    <div className='department-conter'>
-      
-      <div className='department-slider'>
+    <div className='department-container' id='department-container'>
+      {/* {dptFunction.map((d)=>(
+        <div>{d.FunctionID+' '+d.FunctionTitle+''+d.FunctionDescription}</div>
+      ))} */}
+      {/* {dptFunction[0].FunctionID} */}
+      {/* {doctorId} */}
+      <div className='dpt-content' id='dpt-content'>
+        <div className='department-slider'>
 
+        </div>
+        <Departments 
+           toggleNumber={toggleNumber} setToggleNumber={setToggleNumber} 
+        >
+        </Departments>
+
+        <DepartmentInfo toggleNumber={toggleNumber} department={department} departmentFunction={dptFunction}></DepartmentInfo>
+      
+        <Doctors doctorList={doctorList} setDoctorId={setDoctorId}></Doctors>
       </div>
 
-      <Departments toggleNumber={toggleNumber} setToggleNumber={setToggleNumber} setIsTabClicked={setIsTabClicked}></Departments>
-      <DepartmentInfo toggleNumber={toggleNumber} isTabClicked={isTabClicked}></DepartmentInfo>
+        <DepartmentAppointment doctorId={doctorId===''?'1':doctorId}></DepartmentAppointment>
       
-      <Doctors></Doctors>
-     
-
-      <div className='d-appointment' id='d-appointment'>
-        <button onClick={handleAppointment}>close</button>
-        <div className='p-input-form'>
-         <div className='p-input'>
-            <label className='p-input-lable'>I am registering for</label>
-            <div className='p-type'>
-               <div className='p-type-input'>
-                 <input type='radio' name='p-type' style={{marginLeft:'10%'}}></input>
-                 <label className='p-type-lable'>My Self</label>
-               </div>
-               <div className='p-type-input'>
-                 <input type='radio' name='p-type' style={{marginLeft:'10%'}}></input>
-                 <label className='p-type-lable'>Other</label>
-               </div>
-            </div>
-         </div>
-
-         <div className='p-input'>
-           <label className='p-input-lable'>Full name of the patient</label>
-           <input className='p-input-input' type='text'></input>
-         </div>
-
-         <div className='p-input'>
-           <label className='p-input-lable'>Contact number of the patient</label>
-           <input className='p-input-input' type='text'></input>
-         </div>
-         
-         <div className='p-input' id={idType}>
-            <label className='p-input-lable' style={{marginBottom:'5%'}}>Patient Id Number</label>
-            <div className='p-id'>
-               <div className='set-id'>
-                 <SelectedBox setId={setIdType} newId='new-p-id-type' oldId ='p-id-type' list={idTypeList} selectType='ID Type' height='25vh' width={window.innerWidth>500?'9vw':'25vw'}></SelectedBox>
-               </div>
-               <input className='id-number-input' type='text'></input>
-            </div>
-         </div>
-
-         <div className='p-input'>
-           <label className='p-input-lable' style={{marginBottom:'5%'}}>Department and Doctor</label>
-           <div className='selected-doctor'>
-             <div className='s-doctor'>
-               Dental
-             </div>
-             <div className='s-doctor'>
-               Dental
-             </div>
-           </div> 
-         </div>
-
-       </div>
-
-      </div>
-
     </div>
   )
 }

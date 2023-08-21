@@ -65,7 +65,7 @@ export default function NavBar({user,isLogged}) {
 
                         <li className="nav-list" id='department-link'>
                             <div className='nav-link'>
-                              <Link to='/login' className='link'>Department</Link>
+                              <Link to='/department' className='link'>Department</Link>
                             </div>
                             <div className='dpt'>
                                   <Department></Department>

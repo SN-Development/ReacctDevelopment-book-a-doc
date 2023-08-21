@@ -7,19 +7,19 @@ const mysql  = require('mysql')
 const jwt    = require('jsonwebtoken')
 
 const app  = express()
-// const db   = mysql.createPool({
-//     host:'localhost',
-//     user:'root',
-//     password:'',
-//     database:'sn_care'
-// })
-
 const db   = mysql.createPool({
-    host:'bypopnusemkxar0vqkti-mysql.services.clever-cloud.com',
-    user:'uwnq6nr5jl5gb74v',
-    password:'EUcdyJcxXENLz5eNVVSi',
-    database:'bypopnusemkxar0vqkti'
+    host:'localhost',
+    user:'root',
+    password:'',
+    database:'book_a_doc'
 })
+
+// const db   = mysql.createPool({
+//     host:'bypopnusemkxar0vqkti-mysql.services.clever-cloud.com',
+//     user:'uwnq6nr5jl5gb74v',
+//     password:'EUcdyJcxXENLz5eNVVSi',
+//     database:'bypopnusemkxar0vqkti'
+// })
 
 app.use(express.static('build'))
 
@@ -45,11 +45,11 @@ app.use(express.static('build'))
 //     methods:["GET","POST"],
 //     credentials:true
 // }))
-// app.use(cors({
-//     origin:['http://localhost:3000'],
-//     methods:["GET","POST"],
-//     credentials:true
-// }))
+app.use(cors({
+    origin:['http://localhost:3000'],
+    methods:["GET","POST"],
+    credentials:true
+}))
 
 app.use(express.json())
 app.use(bodyParser.json())
@@ -170,7 +170,7 @@ app.post('/api/login',(req,res)=>{
 
 //to check time slot and insert appointment
 app.post('/api/appointment',(req,res)=>{
-
+    
     const doctor = req.body.doctor
     const date = req.body.date
     const timeSlot = req.body.timeSlot
@@ -201,8 +201,9 @@ app.post('/api/appointment',(req,res)=>{
                                 }
                                 else{
                                     if(result3.length===1){
-                                    console.log('Sha')
+                                    //console.log('Sha')
                                     const userID = result3[0].ID
+                                    console.log(userID)
                                     return res.json({Status:'Success',id:userID})
                                     }
                                 }
@@ -225,22 +226,104 @@ app.get('/api/gotoappointment',verifyUser,(req,res)=>{
 })
 
 
-app.get('/api/doctor',(req,res)=>{
+app.post('/api/doctor',(req,res)=>{
+    
+    const toggleNumber = req.body.toggle
+    console.log(toggleNumber)
+    const sqlGetDoctor = 'SELECT * FROM Doctor WHERE DptID = ? '
 
-    const sqlGetDoctor = 'SELECT * FROM Doctor'
-
-    db.query(sqlGetDoctor,(err,result)=>{
+    db.query(sqlGetDoctor,[toggleNumber],(err,result)=>{
         if(err){
             console.log(err)
             return res.json(err)
         }
         else{
-            console.log(result)
-            return res.json(result)
+            let doctor = []
+            doctor = result
+
+            // result.map((doctor)=>(
+            //     console.log(doctor.DoctorID)
+            // ))
+
+            //console.log(result)
+            return res.json({Result:result,Status:'Success'})
         }
     })
 
 })
+
+
+app.post('/api/department',(req,res)=>{
+    
+    const toggleNumber = req.body.toggle
+    //console.log(toggleNumber)
+    const sqlGetDoctor = 'SELECT * FROM Department WHERE DepartmentID = ? '
+
+    db.query(sqlGetDoctor,[toggleNumber],(err,result)=>{
+        if(err){
+            console.log(err)
+            return res.json(err)
+        }
+        else{
+           if(result.length>0){
+              let department = []
+              department = result
+
+              // result.map((department)=>(
+              //     console.log(department.DepartmentID)
+              // ))
+
+              const sqlGetFunction = 'SELECT * FROM DptFunction WHERE DptID = ?'
+
+              db.query(sqlGetFunction,[toggleNumber],(error,rsl)=>{
+                if(error){
+                    console.log(err)
+                }
+                else{
+                    //console.log(rsl)
+                    return res.json({Result:result,Status:'Success',rsl:rsl})
+                }
+              })
+
+              //console.log(result)
+              //return res.json({Result:result,Status:'Success'})
+           }
+        }
+    })
+
+})
+
+app.post('/api/appointment-doctor',(req,res)=>{
+    const id = req.body.id
+    let departmentID = ''
+    console.log(id)
+    const sqlGetDoctor = 'SELECT DoctorName,DptID FROM Doctor WHERE DoctorID = ?'
+
+    db.query(sqlGetDoctor,[id],(err,result)=>{
+        if(err){
+            console.log(err)
+        }
+        else{
+            console.log(result[0].DoctorName)
+            departmentID = result[0].DptID
+            console.log(departmentID)
+           
+            if(result.length==1){
+                const sqlGetDepartment = 'SELECT DepartName FROM Department WHERE DepartmentID = ?'
+                db.query(sqlGetDepartment,[departmentID],(err2,result2)=>{
+                   if(err2){
+                      console.log(err2)
+                   } 
+                   else{
+                      console.log(result2)
+                      return res.json({Doctor:result[0].DoctorName,Department:result2[0].DepartName})
+                   }
+                })
+            }
+        }
+    })
+})
+
 
 app.listen('3008',()=>{
     console.log("Server running 3008 port")

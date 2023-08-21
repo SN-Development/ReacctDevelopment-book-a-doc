@@ -113,7 +113,7 @@ div.appointment-form{
 div.paitent-input{
     height:15%;
     width:80%;
-    background-color: brown;
+    /* background-color: brown; */
     margin-top: 5%;
     margin-bottom: 1%;
     display: flex;
@@ -164,7 +164,7 @@ div.patient-id{
     /* flex-direction: column; */
     /* align-items: center; */
     /* justify-content: space-around; */
-    background-color: rgb(242, 255, 0);
+    /* background-color: rgb(242, 255, 0); */
 }
 .patient-id div.select{
     width:25%;

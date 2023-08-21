@@ -10,6 +10,20 @@ div.doctors-list{
     /* overflow-x:scroll; */
 }
 
+div.doctors-list::-webkit-scrollbar {
+  height:5px;
+  width:5px;
+  
+}
+div.doctors-list::-webkit-scrollbar-thumb {
+  background-color: #00000030; /* Color of the thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+div.doctors-list::-webkit-scrollbar-track {
+  background-color: #00000020; /* Color of the track */
+}
+
 div.doctor{
     height:100%;
     min-width:27%;
@@ -60,6 +74,14 @@ div.doctor-contact{
     width:19.1%;
     background-color:#F3ECEC;
     opacity:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.doctor-contact-icon{
+  color:#f1d84c;
+  margin-left:5%;
 }
 
 div.doctor-name{

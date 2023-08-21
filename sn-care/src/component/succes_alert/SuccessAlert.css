@@ -1,9 +1,9 @@
 div.container{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.575) ;
     
@@ -11,6 +11,7 @@ div.container{
 
 div.alert-box{
     position: relative;
+    top:60%;
     width: 30vw;
     height:60vh;
     background-color: rgb(247, 249, 250);

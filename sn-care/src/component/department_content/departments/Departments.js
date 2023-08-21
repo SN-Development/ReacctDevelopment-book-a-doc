@@ -1,13 +1,29 @@
 import React, { useState } from 'react'
 import './Departments.css'
+import axios from 'axios'
 
-export default function Departments({toggleNumber,setToggleNumber,setIsTabClicked}) {
+export default function Departments({toggleNumber,setToggleNumber}) {
 
-// const [toggleNumber,setToggleNumber] = useState(1)
+let departmentList = [{name:'Nuerology',DNumber:1},
+   {name:'Dental',DNumber:2},
+   {name:'Cardiology',DNumber:3},
+   {name:'Surgery',DNumber:4},
+   {name:'Ophthalmology',DNumber:5},
+]
 
 const handleToggel = (index)=> {
        setToggleNumber(index)
-       setIsTabClicked(true)
+       //document.getElementById(index).className = 'department-tab active-tab'
+       document.getElementById('department-title').className = 'department-title active'
+       document.getElementById('about-department').className = 'about-department active'
+       document.getElementById('department-info').className = 'department-info active'
+
+       setTimeout(() => {
+         document.getElementById('department-title').className = 'department-title'
+         document.getElementById('about-department').className = 'about-department'
+         document.getElementById('department-info').className = 'department-info'
+       },1500);
+      
 }
       
   return (
@@ -15,23 +31,14 @@ const handleToggel = (index)=> {
 
          <p className='departments-heading'>our departments</p>
          <div className='departments-tabs'>
-            <div className={toggleNumber===1?'department-tab active-tab':'department-tab'} 
-               onClick={()=>handleToggel(1)}>
-               Nuerology
-            </div>
-            <div className={toggleNumber===2?'department-tab active-tab':'department-tab'}  
-               onClick={()=>handleToggel(2)}>
-               Dental
-            </div>
-            <div className='department-tab'>
-               Dental
-            </div>
-            <div className='department-tab'>
-               Dental
-            </div>
-            <div className='department-tab'>
-               Dental
-            </div>
+            {
+               departmentList.map((department)=>(
+                  <div className={toggleNumber===department.DNumber? 'department-tab active-tab':'department-tab'}
+                     onClick={()=>handleToggel(department.DNumber)}>
+                     {department.name}
+                  </div>
+               ))
+            }
          </div>
 
       </div>

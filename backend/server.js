@@ -46,7 +46,7 @@ app.use(express.static('build'))
 //     credentials:true
 // }))
 app.use(cors({
-    origin:['http://localhost:3000'],
+    origin:['https://sn-book-a-doc-01.onrender.com'],
     methods:["GET","POST"],
     credentials:true
 }))
